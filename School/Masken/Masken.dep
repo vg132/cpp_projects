@@ -1,0 +1,14 @@
+# Microsoft Developer Studio Generated Dependency File, included by Masken.mak
+
+.\Main.cpp : \
+	".\Mask.h"\
+	".\MaskPart.h"\
+	
+
+.\Mask.cpp : \
+	".\MaskPart.cpp"\
+	
+
+.\MaskPart.cpp : \
+	".\MaskPart.h"\
+	

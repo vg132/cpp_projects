@@ -1,0 +1,323 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Adressbok"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Adressbok Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ADRESSBOK_DIALOG DIALOGEX 0, 0, 274, 250
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ViPer Adressbok - (C) 2001"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_CONTACT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,14,16,247,125,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,273,1,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Alla kontakter",IDC_FRAME_LIST,7,7,260,139
+    GROUPBOX        "Person information",IDC_STATIC,7,147,260,96
+    LTEXT           "Förnamn:",IDC_STATIC,17,161,44,8
+    EDITTEXT        IDC_EDIT_FIRSTNAME,69,158,89,12,ES_AUTOHSCROLL
+    LTEXT           "Efternamn:",IDC_STATIC,17,174,44,8
+    EDITTEXT        IDC_EDIT_LASTNAME,69,172,89,12,ES_AUTOHSCROLL
+    LTEXT           "Adress:",IDC_STATIC,17,187,44,8
+    EDITTEXT        IDC_EDIT_ADDRESS,69,185,89,12,ES_AUTOHSCROLL
+    LTEXT           "Post nummer:",IDC_STATIC,17,200,44,8
+    EDITTEXT        IDC_EDIT_POSTNR,69,198,89,12,ES_AUTOHSCROLL
+    LTEXT           "Stad:",IDC_STATIC,17,213,44,8
+    EDITTEXT        IDC_EDIT_CITY,69,211,89,12,ES_AUTOHSCROLL
+    LTEXT           "Telefon:",IDC_STATIC,17,226,44,8
+    EDITTEXT        IDC_EDIT_PHONE,69,224,89,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Lägg till",IDC_BUTTON_ADD,169,157,50,14
+    PUSHBUTTON      "Tabort",IDC_BUTTON_REMOVE,169,202,50,14
+    PUSHBUTTON      "Spara",IDC_BUTTON_SAVE,169,172,50,14
+    PUSHBUTTON      "Sök",IDC_BUTTON_SEARCH,169,187,50,14
+    PUSHBUTTON      "Visa alla",IDC_BUTTON_SHOWALL,169,217,50,14
+    DEFPUSHBUTTON   "Button2",IDC_BUTTON2,217,229,50,14,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Adressbok MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Adressbok\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Adressbok.EXE\0"
+            VALUE "ProductName", "Adressbok Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ADRESSBOK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Adressbok..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 199, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sök kontakt"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Förnamn",IDC_CHECK_FIRSTNAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,61,10
+    CONTROL         "Adress",IDC_CHECK_ADDRESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,7,61,10
+    CONTROL         "Efternamn",IDC_CHECK_LASTNAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,69,7,61,10
+    CONTROL         "Postnummer",IDC_CHECK_POSTNR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,34,61,10
+    CONTROL         "Ort",IDC_CHECK_CITY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,69,34,61,10
+    CONTROL         "Telefon",IDC_CHECK_PHONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,34,61,10
+    EDITTEXT        IDC_EDIT_FIRSTNAME,7,17,61,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_LASTNAME,69,17,61,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_ADDRESS,131,17,61,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_POSTNR,7,44,61,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_CITY,69,44,61,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_PHONE,131,44,61,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "Sök",IDC_BUTTON_SEARCH,142,65,50,14
+    PUSHBUTTON      "Avbryt",IDC_BUTTON_CANCEL,7,65,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Adressbok.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Adressbok.ico"
+IDI_PHONE               ICON    DISCARDABLE     "res\\Phone01.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Ny",                         ID_FILE_NY
+        MENUITEM "&Öppna...",                   ID_FILE_OPEN
+        MENUITEM "Stäng",                       ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Spara",                      ID_FILE_SAVE
+        MENUITEM "S&para som...",               ID_FILE_SPARASOM
+        MENUITEM SEPARATOR
+        MENUITEM "&Avsluta",                    ID_APP_EXIT
+    END
+    POPUP "Hjälp"
+    BEGIN
+        MENUITEM "Om...",                       ID_APP_ABOUT
+    END
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Adressbok.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

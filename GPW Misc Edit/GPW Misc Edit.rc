@@ -1,0 +1,402 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GPW Misc Edit v1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,14,21,20,SS_SUNKEN
+    LTEXT           "GPW Misc Edit v1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Developer: Viktor Gars\nhttp://www.vgsoftware.com/\nCopyright © 2000 Viktor Gars",
+                    IDC_STATIC,41,25,96,26
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Disclaimer: This Tool is provided ""as is"" without warranty of any kind, either expressed or implied. The author will not be held responsible for any losses incurred, either directly or indirectly by the use of this Tool.",
+                    IDC_STATIC,7,70,221,27
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN,7,66,221,
+                    1
+END
+
+IDD_GPWMISCEDIT_DIALOG DIALOGEX 0, 0, 345, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GPW Misc Edit"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Salary Commercial",IDC_STATIC,7,7,103,81
+    LTEXT           "Trainee:",IDC_STATIC,13,20,27,8
+    EDITTEXT        IDC_COMMERCIAL_TRAINEE,57,18,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,18,11,10
+    LTEXT           "Average:",IDC_STATIC,13,32,30,8
+    EDITTEXT        IDC_COMMERCIAL_AVERAGE,57,30,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,31,11,10
+    LTEXT           "Good:",IDC_STATIC,13,45,20,8
+    EDITTEXT        IDC_COMMERCIAL_GOOD,57,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,45,11,10
+    LTEXT           "Very Good:",IDC_STATIC,13,58,36,8
+    EDITTEXT        IDC_COMMERCIAL_VERYGOOD,57,56,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,57,11,10
+    LTEXT           "Excellent:",IDC_STATIC,13,71,32,8
+    EDITTEXT        IDC_COMMERCIAL_EXCELLENT,57,69,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,70,11,10
+    GROUPBOX        "Salary Design",IDC_STATIC,7,90,103,81
+    LTEXT           "Trainee:",IDC_STATIC,13,103,27,8
+    EDITTEXT        IDC_DESIGN_TRAINEE,57,101,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,101,11,10
+    LTEXT           "Average:",IDC_STATIC,13,116,30,8
+    EDITTEXT        IDC_DESIGN_AVERAGE,57,114,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN7,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,114,11,10
+    LTEXT           "Good:",IDC_STATIC,13,129,20,8
+    EDITTEXT        IDC_DESIGN_GOOD,57,127,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN8,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,127,11,10
+    LTEXT           "Very Good:",IDC_STATIC,13,142,36,8
+    EDITTEXT        IDC_DESIGN_VERYGOOD,57,140,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN9,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,141,11,10
+    LTEXT           "Excellent:",IDC_STATIC,13,155,32,8
+    EDITTEXT        IDC_DESIGN_EXCELLENT,57,153,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN10,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,110,153,11,10
+    GROUPBOX        "Salary Engineering",IDC_STATIC,121,7,103,81
+    LTEXT           "Trainee:",IDC_STATIC,127,19,27,8
+    EDITTEXT        IDC_ENGINEERING_TRAINEE,171,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN11,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,18,11,10
+    LTEXT           "Average:",IDC_STATIC,127,32,30,8
+    EDITTEXT        IDC_ENGINEERING_AVERAGE,171,30,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN12,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,31,11,10
+    LTEXT           "Good:",IDC_STATIC,127,45,20,8
+    EDITTEXT        IDC_ENGINEERING_GOOD,171,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN13,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,45,11,10
+    LTEXT           "Very Good:",IDC_STATIC,127,58,36,8
+    EDITTEXT        IDC_ENGINEERING_VERYGOOD,171,56,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN14,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,57,11,10
+    LTEXT           "Excellent:",IDC_STATIC,127,71,32,8
+    EDITTEXT        IDC_ENGINEERING_EXCELLENT,171,69,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN15,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,70,11,10
+    GROUPBOX        "Salary Mechanics",IDC_STATIC,121,90,103,81
+    LTEXT           "Trainee:",IDC_STATIC,127,103,27,8
+    EDITTEXT        IDC_MECHANICS_TRAINEE,171,101,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN16,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,101,11,10
+    LTEXT           "Average:",IDC_STATIC,127,116,30,8
+    EDITTEXT        IDC_MECHANICS_AVERAGE,171,114,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN17,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,114,11,10
+    LTEXT           "Good:",IDC_STATIC,127,129,20,8
+    EDITTEXT        IDC_MECHANICS_GOOD,171,127,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN18,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,128,11,10
+    LTEXT           "Very Good:",IDC_STATIC,127,142,36,8
+    EDITTEXT        IDC_MECHANICS_VERYGOOD,171,140,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN19,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,141,11,10
+    LTEXT           "Excellent:",IDC_STATIC,127,155,32,8
+    EDITTEXT        IDC_MECHANICS_EXCELLENT,171,153,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN20,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,224,153,11,10
+    GROUPBOX        "Staff Limit",IDC_STATIC,235,7,103,81
+    LTEXT           "Level 1:",IDC_STATIC,241,21,26,8
+    EDITTEXT        IDC_STAFF_1,282,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN21,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,18,11,10
+    LTEXT           "Level 2:",IDC_STATIC,241,32,26,8
+    EDITTEXT        IDC_STAFF_2,282,30,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN22,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,31,11,10
+    LTEXT           "Level 3:",IDC_STATIC,241,45,26,8
+    EDITTEXT        IDC_STAFF_3,282,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN23,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,45,11,10
+    LTEXT           "Level 4:",IDC_STATIC,241,58,26,8
+    EDITTEXT        IDC_STAFF_4,282,56,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN24,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,57,11,10
+    LTEXT           "Level 5:",IDC_STATIC,241,71,26,8
+    EDITTEXT        IDC_STAFF_5,282,69,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN25,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,70,11,10
+    GROUPBOX        "Factory Overheads",IDC_STATIC,235,90,103,81
+    LTEXT           "Level 1:",IDC_STATIC,241,103,26,8
+    EDITTEXT        IDC_FACTORY_1,282,101,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN26,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,101,11,10
+    LTEXT           "Level 2:",IDC_STATIC,241,116,26,8
+    EDITTEXT        IDC_FACTORY_2,282,114,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN27,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,114,11,10
+    LTEXT           "Level 3:",IDC_STATIC,241,129,26,8
+    EDITTEXT        IDC_FACTORY_3,282,127,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN28,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,128,11,10
+    LTEXT           "Level 4:",IDC_STATIC,241,142,26,8
+    EDITTEXT        IDC_FACTORY_4,282,140,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN29,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,141,11,10
+    LTEXT           "Level 5",IDC_STATIC,241,155,24,8
+    EDITTEXT        IDC_FACTORY_5,282,153,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN30,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,327,153,11,10
+    DEFPUSHBUTTON   "Button1",IDC_DUMMY,331,7,7,6,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GPW Misc Edit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GPW Misc Edit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GPW Misc Edit.EXE\0"
+            VALUE "ProductName", "GPW Misc Edit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_GPWMISCEDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About GPW Misc Edit..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GPW Misc Edit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GPW Misc Edit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Import",                     ID_FILE_IMPORT
+        MENUITEM "&Export",                     ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "&GPW Directory...",           ID_EDIT_GPWDIRECTORY
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GPW Misc Edit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

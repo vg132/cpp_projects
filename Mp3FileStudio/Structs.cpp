@@ -1,0 +1,27 @@
+// Structs.cpp: implementation of the CStructs class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Mp3FileStudio.h"
+#include "Structs.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CStructs::CStructs()
+{
+
+}
+
+CStructs::~CStructs()
+{
+
+}

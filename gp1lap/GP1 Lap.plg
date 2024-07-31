@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GP1 Lap - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x41d /fo"Release/GP1 Lap.res" /d "NDEBUG" /d "_AFXDLL" "C:\My Documents\Mina Program\Visual C++\GP1 Lap\GP1 Lap.rc"" 
+Creating temporary file "C:\WIN98\TEMP\RSPA372.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/GP1 Lap.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\Mina Program\Visual C++\GP1 Lap\GP1 Lap.cpp"
+"C:\My Documents\Mina Program\Visual C++\GP1 Lap\GP1 LapDlg.cpp"
+]
+Creating command line "cl.exe @C:\WIN98\TEMP\RSPA372.TMP" 
+Creating temporary file "C:\WIN98\TEMP\RSPA373.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/GP1 Lap.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\Mina Program\Visual C++\GP1 Lap\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WIN98\TEMP\RSPA373.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/GP1 Lap.pdb" /machine:I386 /out:"Release/GP1 Lap.exe"  ".\Release\GP1 Lap.obj" ".\Release\GP1 LapDlg.obj" ".\Release\StdAfx.obj" ".\Release\GP1 Lap.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GP1 Lap.cpp
+GP1 LapDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GP1 Lap.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

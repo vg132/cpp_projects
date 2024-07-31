@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextIndex", "TextIndex.vcproj", "{8C96097D-690C-4BF7-B2B0-4561B407574B}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8C96097D-690C-4BF7-B2B0-4561B407574B}.Debug.ActiveCfg = Debug|Win32
+		{8C96097D-690C-4BF7-B2B0-4561B407574B}.Debug.Build.0 = Debug|Win32
+		{8C96097D-690C-4BF7-B2B0-4561B407574B}.Release.ActiveCfg = Release|Win32
+		{8C96097D-690C-4BF7-B2B0-4561B407574B}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

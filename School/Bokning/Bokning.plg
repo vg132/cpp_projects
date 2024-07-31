@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Bokning - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP82.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Bokning.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\My Documents\Mina Program\C++\Bokning\Booking.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP82.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP83.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Bokning.pdb" /debug /machine:I386 /out:"Debug/Bokning.exe" /pdbtype:sept 
+".\Debug\Bokning.obj"
+".\Debug\BokningDoc.obj"
+".\Debug\BokningView.obj"
+".\Debug\Booking.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Person.obj"
+".\Debug\Room.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Bokning.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP83.tmp"
+<h3>Output Window</h3>
+Compiling...
+Booking.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Bokning.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

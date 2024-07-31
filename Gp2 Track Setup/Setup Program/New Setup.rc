@@ -1,0 +1,419 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 196, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Gp2 Track Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Gp2 Track Setup v1.0",IDC_STATIC,49,7,140,8,SS_NOPREFIX
+    LTEXT           "",IDC_STATIC,7,88,119,8
+    DEFPUSHBUTTON   "OK",IDOK,139,82,50,14,WS_GROUP
+    LTEXT           "Developer: Viktor Gars\nhttp://hem1.passagen.se/formula1/\nCopyright © 2000 Viktor Gars",
+                    IDC_STATIC,49,19,140,26
+    LTEXT           "Other contributors:\nMal Ross for Jam2Jad source.\nhttp://www.grandprix2.com/opensrc/",
+                    IDC_STATIC,48,49,141,25
+END
+
+IDD_NEWSETUP_DIALOG DIALOGEX 0, 0, 194, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gp2 Track Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Next >",IDC_Next,137,192,50,14
+    PUSHBUTTON      "< &Back",IDC_Back,88,192,50,14
+    PUSHBUTTON      "&Cancel",IDC_Exit,7,192,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,186,
+                    180,1,WS_EX_CLIENTEDGE
+    ICON            IDR_MAINFRAME,IDC_MainIcon,7,7,25,23,NOT WS_VISIBLE,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "View Gp2 form",IDC_View,126,84,61,14,NOT WS_VISIBLE
+    LTEXT           "Welcom to Gp2 Track Setup.\r\nThis program will install a Gp2 track on your computer.\r\n\r\nClick Cancel to quit Setup or click Next to continue with the setup.\r\n If the setup inclued a Gp2 form file you can click ""View Gp2 form"" to view this file.",
+                    IDC_Welcome,43,7,144,67,NOT WS_VISIBLE
+    CONTROL         "Jam Install",IDC_Typical,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_GROUP,7,84,46,10
+    CONTROL         "Unpack",IDC_Custom,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,7,114,46,10
+    GROUPBOX        "Static",IDC_PathFrame,7,152,180,31,NOT WS_VISIBLE
+    EDITTEXT        IDC_Dir,14,164,122,12,ES_READONLY | NOT WS_VISIBLE | NOT 
+                    WS_BORDER
+    PUSHBUTTON      "&Browse...",IDC_Browse,142,162,40,14,NOT WS_VISIBLE
+    CONTROL         "Full Install",IDC_FullInstall,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,7,51,46,
+                    10
+    LTEXT           "Select the type of Setup you prefer, then click Next.\r\nAlso select your Gp2 directory if you select Full or Jam Setup or if you select Unpack select the directory you want to unpack the files to.",
+                    IDC_TypeOfSetup,7,7,180,41,NOT WS_VISIBLE
+    LTEXT           "All jam files will be installed to Gp2 and you will be able to select where you want to copy the track file.",
+                    IDC_TypicalText,55,84,132,26,NOT WS_VISIBLE
+    LTEXT           "The track and jam files will be installed to Gp2. You will be able to select the slot where you want to install the track to.",
+                    IDC_Full,55,51,132,25,NOT WS_VISIBLE
+    LTEXT           "All files will be extracted to a directory you select.",
+                    IDC_CustomText,55,114,132,17,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", " \0"
+            VALUE "CompanyName", "VG Software\0"
+            VALUE "FileDescription", "Gp2 Track Setup\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "Gp2 Track Setup\0"
+            VALUE "LegalCopyright", "Copyright © 2000 Viktor Gars\0"
+            VALUE "LegalTrademarks", " \0"
+            VALUE "OriginalFilename", "Gp2 Track Setup\0"
+            VALUE "PrivateBuild", " \0"
+            VALUE "ProductName", "Gp2 Track Setup\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", " \0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_NEWSETUP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Gp2 Track Setup..."
+    IDS_Gp2Dir              "Gp2 Directory"
+    IDS_ExtDir              "Target Directory"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\New Setup.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\New Setup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Quit DIALOGEX 0, 0, 195, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Exit Gp2 Track Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Resume",IDC_Resume,71,90,50,14
+    PUSHBUTTON      "E&xit Setup",IDC_Exit,138,90,50,14
+    ICON            IDR_MAINFRAME,IDC_Icon,7,7,20,20,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Setup is not complete. If you quit the Setup program now, the track will not be installed.\r\n\r\nYou may run the Setup program at a later time to complete the installation\r\n\r\nTo continue installing the track, click Resume. To quit the Setup program, click Exit Setup.",
+                    IDC_STATIC,47,7,141,77
+END
+
+IDD_TrackPos DIALOG DISCARDABLE  0, 0, 128, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Track Position"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&OK",IDC_Next,71,56,50,14
+    COMBOBOX        IDC_TrackPos,7,23,114,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Cancel",IDC_Exit,7,56,50,14
+    LTEXT           "Select a track position for this track.",IDC_STATIC,7,7,
+                    114,9
+    CONTROL         "Change Text in game",IDC_Change,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,41,114,8
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 194, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Next >",IDC_Next,137,192,50,14
+    PUSHBUTTON      "< &Back",IDC_Back,88,192,50,14
+    PUSHBUTTON      "&Cancel",IDC_Exit,7,192,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,186,
+                    180,1,WS_EX_CLIENTEDGE
+    ICON            IDR_MAINFRAME,IDC_MainIcon,7,7,20,20,NOT WS_VISIBLE,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "View Gp2 form",IDC_View,126,84,61,14,NOT WS_VISIBLE
+    LTEXT           "Welcom to Gp2 Track Setup.\r\nThis program will install a Gp2 track on your computer.\r\n\r\nClick Cancel to quit Setup or click Next to continue with the setup.\r\n If the setup inclued a Gp2 form file you can click ""View Gp2 form"" to view this file.",
+                    IDC_WelcomeText,43,7,144,67,NOT WS_VISIBLE
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 194, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Next >",IDC_Next,137,192,50,14
+    PUSHBUTTON      "< &Back",IDC_Back,88,192,50,14
+    PUSHBUTTON      "&Cancel",IDC_Exit,7,192,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,186,
+                    180,1,WS_EX_CLIENTEDGE
+    CONTROL         "Jam Install",IDC_Typical,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_GROUP,7,84,46,10
+    CONTROL         "Unpack",IDC_Custom,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,7,114,46,10
+    GROUPBOX        "Static",IDC_PathFrame,7,152,180,31,NOT WS_VISIBLE
+    EDITTEXT        IDC_Dir,14,164,122,12,ES_READONLY | NOT WS_VISIBLE | NOT 
+                    WS_BORDER
+    PUSHBUTTON      "&Browse...",IDC_Browse,142,162,40,14,NOT WS_VISIBLE
+    CONTROL         "Full Install",IDC_FullInstall,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,7,51,46,
+                    10
+    LTEXT           "Select the type of Setup you prefer, then click Next.\r\nAlso select your Gp2 directory if you select Full or Jam Setup or if you select Unpack select the directory you want to unpack the files to.",
+                    IDC_TypeOfSetup,7,7,180,41,NOT WS_VISIBLE
+    LTEXT           "All jam files will be installed to Gp2 and you will be able to select where you want to copy the track file.",
+                    IDC_TypicalText,55,84,132,26,NOT WS_VISIBLE
+    LTEXT           "The track and jam files will be installed to Gp2. You will be able to select the slot where you want to install the track to.",
+                    IDC_Full,55,51,132,25,NOT WS_VISIBLE
+    LTEXT           "All files will be extracted to a directory you select.",
+                    IDC_CustomText,55,114,132,17,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_Quit, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_TrackPos, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 121
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TrackPos DLGINIT
+BEGIN
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0031, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0032, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0033, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0034, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0035, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0036, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0037, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0038, 
+    IDC_TrackPos, 0x403, 8, 0
+0x7254, 0x6361, 0x206b, 0x0039, 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3031, "\000" 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3131, "\000" 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3231, "\000" 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3331, "\000" 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3431, "\000" 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3531, "\000" 
+    IDC_TrackPos, 0x403, 9, 0
+0x7254, 0x6361, 0x206b, 0x3631, "\000" 
+    0
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\New Setup.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

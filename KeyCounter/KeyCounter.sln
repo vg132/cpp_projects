@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyCounter", "KeyCounter.vcproj", "{0A828354-83DD-480E-9944-562A73BE3B7F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0A828354-83DD-480E-9944-562A73BE3B7F}.Debug.ActiveCfg = Debug|Win32
+		{0A828354-83DD-480E-9944-562A73BE3B7F}.Debug.Build.0 = Debug|Win32
+		{0A828354-83DD-480E-9944-562A73BE3B7F}.Release.ActiveCfg = Release|Win32
+		{0A828354-83DD-480E-9944-562A73BE3B7F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

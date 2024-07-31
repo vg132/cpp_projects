@@ -1,0 +1,691 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GPWEdit v1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,14,20,20,SS_SUNKEN
+    LTEXT           "GPWEdit v1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Developer: Viktor Gars\nhttp://www.vgsoftware.com/\nCopyright © 2000 Viktor Gars",
+                    IDC_STATIC,41,25,119,28
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Disclaimer: This Tool is provided ""as is"" without warranty of any kind, either expressed or implied. The author will not be held responsible for any losses incurred, either directly or indirectly by the use of this Tool.",
+                    IDC_STATIC,7,77,221,27
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,73,
+                    221,1
+END
+
+IDD_GRANDPRIXWORLD_DIALOG DIALOGEX 0, 0, 297, 194
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GPWEdit"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_TreeView,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,13,127,174,WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_FRAME,137,10,153,177
+    DEFPUSHBUTTON   "Button1",IDC_BUTTON1,112,173,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_OTHER_SALARY,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_RACEBONUS,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_CHBONUS,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_ABILITY,224,59,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_LASTYEAR,224,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Salary:",IDC_OTHER_STATIC_SALARY,147,22,70,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Race Bonus:",IDC_OTHER_STATIC_RACEBONUS,147,35,70,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Championship Bonus:",IDC_OTHER_STATIC_WCBONUS,147,48,70,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Ability (1-5):",IDC_OTHER_STATIC_ABILITY,147,61,70,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Last year with Team:",IDC_OTHER_STATIC_LASTYEAR,147,74,
+                    70,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_SALARY,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_RACEBONUS,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_CHBONUS,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_SPEED,224,59,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_SKILL,224,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_OVERTAKING,224,85,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_WETWETHER,224,98,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_CONCENTRATION,224,111,63,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_EXPERIENCE,224,124,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_STAMINA,224,137,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_MORALE,224,150,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_POINTS,224,163,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Salary:",IDC_DRIVER_STATIC_SALARY,147,22,72,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Race Bonus:",IDC_DRIVER_STATIC_RACEBONUS,147,35,72,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Speed (1-5):",IDC_DRIVER_STATIC_SPEED,147,61,72,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Championship Bonus:",IDC_DRIVER_STATIC_WCBONUS,147,48,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Skill (1-5):",IDC_DRIVER_STATIC_SKILL,147,74,72,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Overtaking (1-5):",IDC_DRIVER_STATIC_OVERTAKING,147,87,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Wet Wether (1-5):",IDC_DRIVER_STATIC_WETWETHER,147,100,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Concentration (1-5):",IDC_DRIVER_STATIC_CONCENTRATION,
+                    147,113,72,8,NOT WS_VISIBLE
+    LTEXT           "Experience (1-5):",IDC_DRIVER_STATIC_EXPERIENCE,147,126,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Stamina (1-5):",IDC_DRIVER_STATIC_STAMINA,147,139,72,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Morale (1-100):",IDC_DRIVER_STATIC_MORALE,147,152,72,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Points:",IDC_DRIVER_STATIC_POINTS,147,165,72,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_SALARY,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_ROYALTY,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_ABILITY,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_LASTYEAR,224,59,63,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    LTEXT           "Salary:",IDC_COMMERCIAL_STATIC_SALARY,147,22,70,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Royalty %",IDC_COMMERCIAL_STATIC_ROYALTY,147,35,70,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Ability (1-5):",IDC_COMMERCIAL_STATIC_ABILITY,147,48,70,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Last year with Team:",IDC_COMMERCIAL_STATIC_LASTYEAR,
+                    147,61,70,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_EXCELLENT,224,20,63,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_VERYGOOD,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_GOOD,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_AVERAGE,224,59,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_TRAINEE,224,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_MORALE,224,85,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Excellent (0-255):",IDC_OTHERROOT_STATIC_EXCELLENT,147,
+                    22,63,8,NOT WS_VISIBLE
+    LTEXT           "Very Good (0-255):",IDC_OTHERROOT_STATIC_VERYGOOD,147,
+                    35,63,8,NOT WS_VISIBLE
+    LTEXT           "Average (0-255):",IDC_OTHERROOT_STATIC_AVERAGE,147,61,
+                    63,8,NOT WS_VISIBLE
+    LTEXT           "Good (0-255):",IDC_OTHERROOT_STATIC_GOOD,147,48,63,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Trainee (0-255):",IDC_OTHERROOT_STATIC_TRAINEE,147,74,
+                    63,8,NOT WS_VISIBLE
+    LTEXT           "Morale (1-100):",IDC_OTHERROOT_STATIC_MORALE,147,87,63,
+                    8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ROOT_PLAYER,197,20,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_TEAM,197,33,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_CREATED,197,46,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_MODIFIED,197,59,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_SCORE,223,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_YEARS,223,85,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_YEAR,223,98,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_POS,223,111,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_POINTS,223,124,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_NEXTRACE,197,137,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Player:",IDC_ROOT_STATIC_PLAYER,149,22,39,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Team:",IDC_ROOT_STATIC_TEAM,149,35,39,8,NOT WS_VISIBLE
+    LTEXT           "Created:",IDC_ROOT_STATIC_CREATED,149,48,39,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Modified:",IDC_ROOT_STATIC_MODIFIED,149,61,39,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Score:",IDC_ROOT_STATIC_SCORE,149,74,32,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Seasons Completed:",IDC_ROOT_STATIC_YEARS,149,87,69,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Current Year:",IDC_ROOT_STATIC_YEAR,149,100,61,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Championship Position:",IDC_ROOT_STATIC_POS,149,113,73,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Championship Points:",IDC_ROOT_STATIC_POINTS,149,126,67,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Next Race:",IDC_ROOT_STATIC_NEXTRACE,149,139,47,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_TEAM_BUDGET,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_TEAM_TESTPRICE,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_TEAM_POINTS,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Budget:",IDC_TEAM_STATIC_BUDGET,147,22,49,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Test Price:",IDC_TEAM_STATIC_TESTPRICE,147,35,49,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Points:",IDC_TEAM_STATIC_POINTS,147,48,49,8,NOT 
+                    WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "Save file editor for Grand Prix World\0"
+            VALUE "CompanyName", "VG Software\0"
+            VALUE "FileDescription", "GPWEdit\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "GPWEdit\0"
+            VALUE "LegalCopyright", "Copyright (C) Viktor Gars 2000\0"
+            VALUE "LegalTrademarks", " \0"
+            VALUE "OriginalFilename", "GPWEdit.exe\0"
+            VALUE "PrivateBuild", " \0"
+            VALUE "ProductName", "GPWEdit\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", " \0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+        HORZGUIDE, 74
+    END
+
+    IDD_GRANDPRIXWORLD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Grand Prix World.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Grand Prix World.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Team DIALOG DISCARDABLE  0, 0, 294, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEAM_BUDGET,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_TEAM_TESTPRICE,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_TEAM_POINTS,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Budget:",IDC_TEAM_STATIC_BUDGET,147,22,49,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Test Price:",IDC_TEAM_STATIC_TESTPRICE,147,35,49,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Points:",IDC_TEAM_STATIC_POINTS,147,48,49,8,NOT 
+                    WS_VISIBLE
+END
+
+IDD_Driver DIALOG DISCARDABLE  0, 0, 294, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DRIVER_SALARY,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_RACEBONUS,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_CHBONUS,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_SPEED,224,59,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_SKILL,224,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_OVERTAKING,224,85,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_WETWETHER,224,98,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_CONCENTRATION,224,111,63,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_EXPERIENCE,224,124,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_STAMINA,224,137,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_MORALE,224,150,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DRIVER_POINTS,224,163,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Salary:",IDC_DRIVER_STATIC_SALARY,147,22,72,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Race Bonus:",IDC_DRIVER_STATIC_RACEBONUS,147,35,72,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Speed (1-5):",IDC_DRIVER_STATIC_SPEED,147,61,72,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Championship Bonus:",IDC_DRIVER_STATIC_WCBONUS,147,48,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Skill (1-5):",IDC_DRIVER_STATIC_SKILL,147,74,72,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Overtaking (1-5):",IDC_DRIVER_STATIC_OVERTAKING,147,87,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Wet Wether (1-5):",IDC_DRIVER_STATIC_WETWETHER,147,100,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Concentration (1-5):",IDC_DRIVER_STATIC_CONCENTRATION,
+                    147,113,72,8,NOT WS_VISIBLE
+    LTEXT           "Experience (1-5):",IDC_DRIVER_STATIC_EXPERIENCE,147,126,
+                    72,8,NOT WS_VISIBLE
+    LTEXT           "Stamina (1-5):",IDC_DRIVER_STATIC_STAMINA,147,139,72,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Morale (1-100):",IDC_DRIVER_STATIC_MORALE,147,152,72,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Points:",IDC_DRIVER_STATIC_POINTS,147,165,72,8,NOT 
+                    WS_VISIBLE
+END
+
+IDD_Root DIALOG DISCARDABLE  0, 0, 293, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROOT_PLAYER,197,20,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_TEAM,197,33,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_CREATED,197,46,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_MODIFIED,197,59,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_SCORE,223,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_YEARS,223,85,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_YEAR,223,98,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_POS,223,111,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_POINTS,223,124,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ROOT_NEXTRACE,197,137,89,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Player:",IDC_ROOT_STATIC_PLAYER,149,22,39,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Team:",IDC_ROOT_STATIC_TEAM,149,35,39,8,NOT WS_VISIBLE
+    LTEXT           "Created:",IDC_ROOT_STATIC_CREATED,149,48,39,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Modified:",IDC_ROOT_STATIC_MODIFIED,149,61,39,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Score:",IDC_ROOT_STATIC_SCORE,149,74,32,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Seasons Completed:",IDC_ROOT_STATIC_YEARS,149,87,69,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Current Year:",IDC_ROOT_STATIC_YEAR,149,100,61,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Championship Position:",IDC_ROOT_STATIC_POS,149,113,73,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Championship Points:",IDC_ROOT_STATIC_POINTS,149,126,67,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Next Race:",IDC_ROOT_STATIC_NEXTRACE,149,139,47,8,NOT 
+                    WS_VISIBLE
+END
+
+IDD_Commercial DIALOG DISCARDABLE  0, 0, 294, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMERCIAL_SALARY,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_ROYALTY,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_ABILITY,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_COMMERCIAL_LASTYEAR,224,59,63,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    LTEXT           "Salary:",IDC_COMMERCIAL_STATIC_SALARY,147,22,70,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Royalty %",IDC_COMMERCIAL_STATIC_ROYALTY,147,35,70,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Ability (1-5):",IDC_COMMERCIAL_STATIC_ABILITY,147,48,70,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Last year with Team:",IDC_COMMERCIAL_STATIC_LASTYEAR,
+                    147,61,70,8,NOT WS_VISIBLE
+END
+
+IDD_Other DIALOG DISCARDABLE  0, 0, 294, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_OTHER_SALARY,224,20,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_RACEBONUS,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_CHBONUS,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_ABILITY,224,59,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHER_LASTYEAR,224,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Salary:",IDC_OTHER_STATIC_SALARY,147,22,70,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Race Bonus:",IDC_OTHER_STATIC_RACEBONUS,147,35,70,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Championship Bonus:",IDC_OTHER_STATIC_WCBONUS,147,48,70,
+                    8,NOT WS_VISIBLE
+    LTEXT           "Ability (1-5):",IDC_OTHER_STATIC_ABILITY,147,61,70,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Last year with Team:",IDC_OTHER_STATIC_LASTYEAR,147,74,
+                    70,8,NOT WS_VISIBLE
+END
+
+IDD_OTHERROOT DIALOG DISCARDABLE  0, 0, 294, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_OTHERROOT_EXCELLENT,224,20,63,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_VERYGOOD,224,33,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_GOOD,224,46,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_AVERAGE,224,59,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_TRAINEE,224,72,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_OTHERROOT_MORALE,224,85,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Excellent (0-255):",IDC_OTHERROOT_STATIC_EXCELLENT,147,
+                    22,63,8,NOT WS_VISIBLE
+    LTEXT           "Very Good (0-255):",IDC_OTHERROOT_STATIC_VERYGOOD,147,
+                    35,63,8,NOT WS_VISIBLE
+    LTEXT           "Average (0-255):",IDC_OTHERROOT_STATIC_AVERAGE,147,61,
+                    63,8,NOT WS_VISIBLE
+    LTEXT           "Good (0-255):",IDC_OTHERROOT_STATIC_GOOD,147,48,63,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Trainee (0-255):",IDC_OTHERROOT_STATIC_TRAINEE,147,74,
+                    63,8,NOT WS_VISIBLE
+    LTEXT           "Morale (1-100):",IDC_OTHERROOT_STATIC_MORALE,147,87,63,
+                    8,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_Team, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_Driver, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_Root, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_Commercial, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_Other, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_OTHERROOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM "&Close",                      IDC_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &as...",                 IDC_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Export...",                   IDC_FILE_EXPORT
+        MENUITEM "Import...",                   IDC_FILE_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Set GPW Path...",             IDC_EDIT_GPWPath
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "GPWEdit Guide...",            IDC_HELP_HOWTO
+        MENUITEM "Help...",                     IDC_HELP_MENUHELP
+        MENUITEM SEPARATOR
+        MENUITEM "VG Software Online",          IDC_HELP_ONLINE
+        MENUITEM SEPARATOR
+        MENUITEM "&About GPW Save Edit...",     ID_HELP_ABOUT
+    END
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Grand Prix World.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

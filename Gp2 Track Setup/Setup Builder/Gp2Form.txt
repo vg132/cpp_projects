@@ -1,0 +1,44 @@
+31/01/2000	                                             Version 1.0
+=======================================================================
+
+Title		: GP2 Track Setup Wizard
+Author		: Viktor Gars
+Files		: Gp2 Track Setup Wizard.exe, Win32.bin, Gp2Wiz.hlp, Gp2Form.txt
+Email Address	: formula1@swipnet.se
+Homepage	: http://hem1.passagen.se/formula1/ - VG Software
+Description	: A Track Setup program
+Thanks to	: Geoff Crammond for GP2, Gp2 OpenSource for Jam2Jad source.
+
+=======================================================================
+
+Construction:
+-------------
+
+Base		: No base
+Editor(s) used	: Microsoft Visual C++
+Known Bugs	: None
+Build Time	: 5 days
+
+Installation:
+-------------
+
+Unzip all files into the same directory and run Gp2 Track Setup Wizard.exe
+
+Contact:
+--------
+
+If you have suggestions, comments, or bug reports about Gp2 Track Setup Wizard, or need support
+please e-mail me at formula1@swipnet.se or visite my homepage http://hem1.passagen.se/formula1/
+
+Copyright / Permissions
+--------
+
+You do not have permission to put this tool on any CD-ROM of GP2 utilities that is to be retailed without the authors prior conscent. You do however have permission to copy GP2 Track Handler and to distribute it from your webpage.
+
+Disclaimer
+--------
+
+NOTE!! The author of this package (Program) takes no responsibility for it's use.
+
+=======================================================================
+(C) Viktor Gars 2000

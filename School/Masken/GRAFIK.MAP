@@ -1,0 +1,843 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 0753DH 0753EH _TEXT              CODE
+ 07540H 0B149H 03C0AH _BGI_TEXT          CODE
+ 0B150H 0B70FH 005C0H E87_PROG           CODE
+ 0B710H 0DE7FH 02770H EMU_PROG           CODE
+ 0DE80H 0DE80H 00000H _FARDATA           FAR_DATA
+ 0DE80H 0DE80H 00000H _FARBSS            FAR_BSS
+ 0DE80H 0DE80H 00000H _OVERLAY_          OVRINFO
+ 0DE80H 0DE80H 00000H _1STUB_            STUBSEG
+ 0DE80H 0EECFH 01050H _DATA              DATA
+ 0EED0H 0EED3H 00004H _CVTSEG            DATA
+ 0EED4H 0EED9H 00006H _SCNSEG            DATA
+ 0EEDAH 0EEDAH 00000H GRAPH              DATA
+ 0EEDAH 0EEDAH 00000H _CONST             CONST
+ 0EEDAH 0EEF1H 00018H _INIT_             INITDATA
+ 0EEF2H 0EEF2H 00000H _INITEND_          INITDATA
+ 0EEF2H 0EEFDH 0000CH _EXIT_             EXITDATA
+ 0EEFEH 0EEFEH 00000H _EXITEND_          EXITDATA
+ 0EEFEH 0F053H 00156H _BSS               BSS
+ 0F054H 0F054H 00000H _BSSEND            BSSEND
+ 0F060H 0F0DFH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 0000:1EA3       operator delete(void far*)
+ 0000:1E83       operator delete(void near*)
+ 0000:1EC7       operator delete[](void far*)
+ 0000:1E93       operator delete[](void near*)
+ 0000:1F70       operator new(unsigned int)
+ 0754:1859       @dgroup
+ 0000:0400       grafik::clearscreen()
+ 0000:03E9       grafik::getcolor(int,int)
+ 0000:03A7       grafik::getmaxx()
+ 0000:03B6       grafik::getmaxy()
+ 0000:0293       grafik::initialize()
+ 0000:0375       grafik::paintbox(int,int,int,int,int)
+ 0000:03C5       grafik::paintline(int,int,int,int,int)
+ 0000:031E       grafik::paintpixle(int,int,int)
+ 0000:0336       grafik::printtext(int,int,char near*,int,int,int,int)
+ 0000:0312       grafik::reset()
+ 0000:1F53       set_new_handler(void(near*)())
+ 0000:2FC0       set_terminate(void(near*)())
+ 0000:3090       set_unexpected(void(near*)())
+ 0000:6911       string::string(const char near*)
+ 0000:67D7       string::string(const string near&)
+ 0000:6B81       string::~string()
+ 0000:6C30       string::assert_element(unsigned int) const
+ 0000:6D17       string::assert_index(unsigned int) const
+ 0DE8:0FEA       string::case_sensitive
+ 0DE8:0FF4       string::freeboard
+ 0DE8:0FF0       string::initial_capac
+ 0000:72AC       string::initial_capacity(unsigned int)
+ 0000:72F3       string::max_waste(unsigned int)
+ 0DE8:0FEC       string::paranoid_check
+ 0DE8:0FF2       string::resize_inc
+ 0000:72C9       string::resize_increment(unsigned int)
+ 0000:7255       string::set_case_sensitive(int)
+ 0000:7272       string::set_paranoid_check(int)
+ 0DE8:0FEE       string::skip_white
+ 0000:728F       string::skip_whitespace(int)
+ 0000:2FB8       terminate()
+ 0000:6E9F       tstringref::tstringref(const char near*,unsigned int,const char near*,unsigned int,unsigned int)
+ 0000:6F56       tstringref::~tstringref()
+ 0000:7014       tstringref::check_freeboard()
+ 0000:7078       tstringref::grow_to(unsigned int)
+ 0000:6FB2       tstringref::reserve(unsigned int)
+ 0000:70C9       tstringref::round_capacity(unsigned int)
+ 0000:7116       tstringref::splice(unsigned int,unsigned int,const char near*,unsigned int)
+ 0000:6DFE       tsubstring::assert_element(unsigned int) const
+ 0000:6171       typeinfo::operator =(const typeinfo near&)
+ 0000:6116       typeinfo::typeinfo(const typeinfo near&)
+ 0000:617D       typeinfo::~typeinfo()
+ 0000:61A5       typeinfo::operator ==(const typeinfo near&) const
+ 0000:61C8       typeinfo::operator !=(const typeinfo near&) const
+ 0000:61E2       typeinfo::before(const typeinfo near&) const
+ 0000:6245       typeinfo::name() const
+ 0000:3088       unexpected()
+ 0000:320E       xalloc::xalloc(const string near&,unsigned int)
+ 0000:3277       xalloc::raise()
+ 0000:35C9       xmsg::operator =(const xmsg near&)
+ 0000:348A       xmsg::xmsg(const xmsg near&)
+ 0000:33E7       xmsg::xmsg(const string near&)
+ 0000:350B       xmsg::~xmsg()
+ 0000:3563       xmsg::raise()
+ 0000:1EF7       xnew_handler()
+ 0000:4C8B       _catchcleanup()
+ 0000:4557       _rethrowexception(unsigned int,unsigned char near*)
+ 0000:4507       _throwexception(void far*,void far*,void far*,void far*,unsigned int,unsigned int,unsigned int,unsigned char near*)
+ 0000:654C       __dynamiccast(void far*,void far*,void far*,void far*,int)
+ 0000:3108       __getpolymorphicdtc(void far*,unsigned int)
+ 0000:316A       __getpolymorphicdtcfar(void far*,unsigned int)
+ 0000:625E       __gettypeinfo(void far*,void far*,void far*,void far*)
+ 0000:6744       __refdestructorcount()
+ 0000:674A       __refexceptionlist()
+ 0000:6109       __throwexceptionname()
+ 0000:60EF       __throwfilename()
+ 0000:60FC       __throwlinenumber()
+ 0DE8:0000       DATASEG@
+ 0000:028F       DGROUP@
+ 0B71:213F       e086_Entry
+ 0B71:26CD       e086_Shortcut
+ 0B15:04E0       e087_Entry
+ 0B15:05A3       e087_Shortcut
+ 0B15:003F       e087_Trap
+ 0B71:25E9       e287_FPU_Control
+ 0B71:273E       EmuVectorException
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:1CDF       F_LDIV@
+ 0000:1CEE       F_LMOD@
+ 0000:1CE6       F_LUDIV@
+ 0000:1CF6       F_LUMOD@
+ 0000:1D8D       F_LXLSH@
+ 0000:1CC5       F_LXMUL@
+ 0000:2A14       F_PADD@
+ 0000:2A43       F_PSUB@
+ 0000:29F5       F_SCOPY@
+ 0000:1CDF       LDIV@
+ 0000:1CEE       LMOD@
+ 0000:1CE6       LUDIV@
+ 0000:1CF6       LUMOD@
+ 0000:1D8D       LXLSH@
+ 0000:1CC5       LXMUL@
+ 0000:1CDC       N_LDIV@
+ 0000:1CEB       N_LMOD@
+ 0000:1CE3       N_LUDIV@
+ 0000:1CF3       N_LUMOD@
+ 0000:1D8A       N_LXLSH@
+ 0000:1DAB       N_LXMUL@
+ 0000:2A11       N_PADD@
+ 0000:2A71       N_PCMP@
+ 0000:2A40       N_PSUB@
+ 0000:2A14       PADD@
+ 0000:2A43       PSUB@
+ 0B71:2151       rs1
+ 0B71:26A2       rs2
+ 0000:29F5       SCOPY@
+ 0000:2B3F       _abort
+ 0754:12D5       _arc
+ 0000:2B4F       _atexit
+ 0754:1C32       _bar
+ 0754:1C55       _bar3d
+ 0000:29B1       _brk
+ 0754:1300       _circle
+ 0754:0EE5       _cleardevice
+ 0754:0F96       _clearviewport
+ 0754:0E3E       _closegraph
+ 0754:066D       _detectgraph
+ 0754:1BF2       _drawpoly
+ 0754:1C96       _ellipse
+ 0DE8:0094       _errno
+ 0000:2BCC       _exit
+ 0000:22A5       _farfree
+ 0000:23AF       _farmalloc
+ 0000:2509       _farrealloc
+ 0000:134C       _fflush
+ 0754:1CC6       _fillellipse
+ 0754:1C12       _fillpoly
+ 0754:1EB5       _floodfill
+ 0000:13DD       _flushall
+ 0000:148B       _fprintf
+ 0000:171C       _fputc
+ 0000:1861       _fputchar
+ 0000:14A5       _fputs
+ 0000:2581       _free
+ 0000:155B       _fseek
+ 0000:15C4       _ftell
+ 0754:1D33       _getarccoords
+ 0754:132C       _getaspectratio
+ 0754:13D8       _getbkcolor
+ 0754:13C7       _getcolor
+ 0754:1DB3       _getdefaultpalette
+ 0754:1092       _getdrivername
+ 0754:1245       _getfillpattern
+ 0754:11F4       _getfillsettings
+ 0754:0DE8       _getgraphmode
+ 0754:2066       _getimage
+ 0754:113E       _getlinesettings
+ 0754:1D7D       _getmaxcolor
+ 0754:1DF1       _getmaxmode
+ 0754:106C       _getmaxx
+ 0754:107F       _getmaxy
+ 0754:10B8       _getmodename
+ 0754:05C9       _getmoderange
+ 0754:14D2       _getpalette
+ 0754:1D98       _getpalettesize
+ 0754:2025       _getpixel
+ 0754:15AF       _gettextsettings
+ 0000:2C2C       _getvect
+ 0754:0F77       _getviewsettings
+ 0754:104E       _getx
+ 0754:105D       _gety
+ 0754:08A1       _graphdefaults
+ 0754:0193       _grapherrormsg
+ 0754:030D       _graphresult
+ 0754:14F1       _imagesize
+ 0754:0979       _initgraph
+ 0754:0BD6       _installuserdriver
+ 0754:0CBB       _installuserfont
+ 0000:0E3F       _isatty
+ 0754:1BCF       _line
+ 0754:1103       _linerel
+ 0754:10DC       _lineto
+ 0000:1CBD       _localeconv
+ 0000:0E54       _lseek
+ 0000:2650       _malloc
+ 0000:0C70       _memcpy
+ 0000:0D1B       _memmove
+ 0000:0CB7       _memset
+ 0754:102E       _moverel
+ 0754:1007       _moveto
+ 0000:0CD2       _movmem
+ 0754:15CE       _outtext
+ 0754:1F2A       _outtextxy
+ 0000:1691       _perror
+ 0754:1362       _pieslice
+ 0754:189D       _postdevice
+ 0000:0A4C       _pow10
+ 0754:1526       _putimage
+ 0754:2046       _putpixel
+ 0000:2F41       _raise
+ 0000:46CF       _RaiseException
+ 0000:27A7       _realloc
+ 0754:119E       _rectangle
+ 0754:03F4       _registerfarbgidriver
+ 0754:04A8       _registerfarbgifont
+ 0754:0E0A       _restorecrtmode
+ 0000:29C1       _sbrk
+ 0754:1D03       _sector
+ 0754:19C1       _setactivepage
+ 0754:13E9       _setallpalette
+ 0754:134A       _setaspectratio
+ 0754:138D       _setbkcolor
+ 0000:29D5       _setblock
+ 0754:1D5C       _setcolor
+ 0754:125E       _setfillpattern
+ 0754:1211       _setfillstyle
+ 0754:0593       _setgraphbufsize
+ 0754:0D62       _setgraphmode
+ 0754:115D       _setlinestyle
+ 0000:0C8F       _setmem
+ 0754:148F       _setpalette
+ 0754:1E2C       _setrgbpalette
+ 0754:161A       _settextjustify
+ 0754:165B       _settextstyle
+ 0754:1822       _setusercharsize
+ 0000:1A29       _setvbuf
+ 0000:2C3F       _setvect
+ 0754:0F00       _setviewport
+ 0754:199E       _setvisualpage
+ 0754:19E7       _setwritemode
+ 0000:2E3F       _signal
+ 0000:0D36       _strlen
+ 0754:1848       _textheight
+ 0754:1FD7       _textwidth
+ 0DE8:0E72       __8086
+ 0DE8:0720       __8087
+ 0000:2C17       __abort
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 0DE8:0E74       __atexitcnt
+ 0DE8:1080       __atexittbl
+ 0754:1AAB       __autodetect
+ 0DE8:02D0       __backcolor
+ 0DE8:024B       __BGI_ADD
+ 0DE8:00AE       __BGI_auto
+ 0DE8:00AA       __BGI_ovr
+ 0000:2884       __brk
+ 0DE8:00A0       __brklvl
+ 0DE8:0084       __C0argc
+ 0DE8:0086       __C0argv
+ 0DE8:0088       __C0environ
+ 0000:2BF5       __cexit
+ 0000:015B       __checknull
+ 0000:0148       __cleanup
+ 0000:609E       __CurrExcContext
+ 0000:0000  Abs  __cvtfak
+ 0000:2C07       __c_exit
+ 0DE8:0247       __DDO_ADD
+ 0DE8:0722       __default87
+ 0DE8:10CA       __DestructorCountPtr
+ 0DE8:0ABC       __doserrno
+ 0000:0E2B       __DOSERROR
+ 0DE8:0ABE       __dosErrorToSV
+ 0DE8:02CE       __drawcolor
+ 0DE8:0840       __emu
+ 0DE8:008A       __envLng
+ 0DE8:008C       __envseg
+ 0DE8:008E       __envSize
+ 0000:31D0       __ExceptInit
+ 0000:5387       __ExceptionHandler
+ 0DE8:0096       __Exception_list
+ 0000:2BDF       __exit
+ 0DE8:0E76       __exitbuf
+ 0DE8:0E78       __exitfopen
+ 0DE8:0E7A       __exitopen
+ 0DE8:02CF       __fillcolor
+ 0DE8:02D2       __fillstyle
+ 0DE8:0E6A       __first
+ 0000:141F       __flushout
+ 0000:0BAC       __fmemcmp
+ 0000:0BD4       __fmemcpy
+ 0000:0C1E       __fmemset
+ 0DE8:02C6       __FON_ADD
+ 0000:0B22       __fperror
+ 0DE8:0E1E       __fpstklen
+ 0000:0673       __fpuint
+ 0000:1701       __fputc
+ 0000:1876       __FPUTN
+ 0000:0BF8       __fsetmem
+ 0000:0C40       __fstrcmp
+ 0000:4684       __Global_unwind
+ 0000:2B0D       __graphexit
+ 0000:2B1D       __graphfreemem
+ 0000:2B2D       __graphgetmem
+ 0754:032A       __GraphNotInstalled
+ 0754:2280       __GRP_ovr
+ 0754:1B7E       __gr_cleardevice
+ 0754:1B1C       __gr_detectgraph
+ 0DE8:02C4       __gr_ErrCode
+ 0754:1DD0       __gr_getmodename
+ 0754:1A5A       __gr_imagesize
+ 0754:1BB2       __gr_lineto
+ 0754:1B95       __gr_moveto
+ 0754:20A3       __gr_putimage
+ 0754:195F       __gr_restorecrtmode
+ 0754:1E71       __gr_setallpalette
+ 0754:1E0D       __gr_setbkcolor
+ 0754:1A0A       __gr_setfillpattern
+ 0754:1EFA       __gr_setfillstyle
+ 0754:1929       __gr_setgraphmode
+ 0754:1E8C       __gr_setlinestyle
+ 0754:1E52       __gr_setpalette
+ 0754:1A3D       __gr_settextjustify
+ 0754:1F60       __gr_settextstyle
+ 0754:1FB1       __gr_setusercharsize
+ 0754:18FD       __gr_setviewport
+ 0754:2004       __gr_textheight
+ 0DE8:009C       __heapbase
+ 0DE8:0E52       __heaplen
+ 0DE8:00A4       __heaptop
+ 0754:1B59       __initdevice
+ 0754:18B4       __installdevice
+ 0DE8:0074       __Int0Vector
+ 0DE8:0078       __Int4Vector
+ 0DE8:007C       __Int5Vector
+ 0DE8:0080       __Int6Vector
+ 0000:0DED       __IOERROR
+ 0DE8:0E6C       __last
+ 0DE8:0726       __LDT
+ 0DE8:02D1       __linestyle
+ 0DE8:0DF6       __localeconvention
+ 0000:52B4       __Local_unwind
+ 0000:1DC2       __LONGTOA
+ 0000:0291       __MMODEL
+ 0DE8:0E5A       __new_handler
+ 0DE8:0A92       __nfile
+ 0DE8:0A94       __openfd
+ 0DE8:0092       __osmajor
+ 0DE8:0093       __osminor
+ 0DE8:0092       __osversion
+ 0DE8:02D9       __OverScanColor
+ 0000:0A57       __POW10
+ 0DE8:0724       __protected
+ 0DE8:0090       __psp
+ 0000:1E7F       __REALCVT
+ 0DE8:1050       __RealCvtVector
+ 0754:18B9       __reinstalldevice
+ 0000:01DD       __restorezero
+ 0000:52D4       __Return_unwind
+ 0DE8:0E6E       __rover
+ 0000:1C68       __rtl_write
+ 0000:28C7       __sbrk
+ 0DE8:1054       __ScanTodVector
+ 0000:0D52       __setupio
+ 0DE8:02CA       __StatOfs
+ 0DE8:02CC       __StatSeg
+ 0DE8:0E54       __stklen
+ 0DE8:0952       __streams
+ 0DE8:0B80       __sys_errlist
+ 0DE8:0BE0       __sys_nerr
+ 0000:0182       __terminate
+ 0000:0000  Abs  __turboCvt
+ 0000:1E3F       __UTOA
+ 0DE8:0092       __version
+ 0000:0E99       __VPRINTER
+ 0000:1CA5       __write
+ 0000:0840       __XCVT
+ 0000:1C33       __xfflush
+ 0000:2956       ___brk
+ 0DE8:009A       ___brklvl
+ 0000:301E       ___call_terminate
+ 0000:30C6       ___call_unexpected
+ 0DE8:0EB8       ___CPPexceptionList
+ 0000:2A92       ___ErrorMessage
+ 0DE8:0EBC       ___exceptFlags
+ 0DE8:0ED8       ___exceptionNameBuff
+ 0DE8:0ED6       ___exceptMemAllocVars
+ 0DE8:0ED4       ___exceptStaticBuffP
+ 0DE8:0F58       ___ExceptStaticXbuff
+ 0000:67B6       ___ExitExceptBlocks
+ 0000:2165       ___first
+ 0000:058A       ___fpreset
+ 0DE8:0098       ___heapbase
+ 0000:6750       ___InitExceptBlocks
+ 0000:36D2       ___JumpToCatch__
+ 0000:2167       ___last
+ 0754:0178       ___move
+ 0000:2169       ___rover
+ 0DE8:0EBE       ___savedDS
+ 0DE8:0EC0       ___savedSI
+ 0000:297C       ___sbrk
+ 0DE8:10C0       ___SignalPtr
+ 0DE8:0EC2       ___terminatePTR
+ 0DE8:0ECA       ___terminate_DS
+ 0DE8:0ED2       ___throwExceptionName
+ 0DE8:0ECE       ___throwFileName
+ 0DE8:0ED0       ___throwLineNumber
+ 0DE8:0EC6       ___unexpectdPTR
+ 0DE8:0ECC       ___unexpectd_DS
+ 0000:1B0E       ___write
+ 0DE8:0E56       ___xalloc
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __turboCvt
+ 0000:0000  Abs  __cvtfak
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0632  Abs  FISRQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:1000  Abs  __AHINCR
+ 0000:1632  Abs  FIERQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+ 0000:0148       __cleanup
+ 0000:015B       __checknull
+ 0000:0182       __terminate
+ 0000:01DD       __restorezero
+ 0000:028F       DGROUP@
+ 0000:0291       __MMODEL
+ 0000:0293       grafik::initialize()
+ 0000:0312       grafik::reset()
+ 0000:031E       grafik::paintpixle(int,int,int)
+ 0000:0336       grafik::printtext(int,int,char near*,int,int,int,int)
+ 0000:0375       grafik::paintbox(int,int,int,int,int)
+ 0000:03A7       grafik::getmaxx()
+ 0000:03B6       grafik::getmaxy()
+ 0000:03C5       grafik::paintline(int,int,int,int,int)
+ 0000:03E9       grafik::getcolor(int,int)
+ 0000:0400       grafik::clearscreen()
+ 0000:058A       ___fpreset
+ 0000:0673       __fpuint
+ 0000:0840       __XCVT
+ 0000:0A4C       _pow10
+ 0000:0A57       __POW10
+ 0000:0B22       __fperror
+ 0000:0BAC       __fmemcmp
+ 0000:0BD4       __fmemcpy
+ 0000:0BF8       __fsetmem
+ 0000:0C1E       __fmemset
+ 0000:0C40       __fstrcmp
+ 0000:0C70       _memcpy
+ 0000:0C8F       _setmem
+ 0000:0CB7       _memset
+ 0000:0CD2       _movmem
+ 0000:0D1B       _memmove
+ 0000:0D36       _strlen
+ 0000:0D52       __setupio
+ 0000:0DED       __IOERROR
+ 0000:0E2B       __DOSERROR
+ 0000:0E3F       _isatty
+ 0000:0E54       _lseek
+ 0000:0E99       __VPRINTER
+ 0000:134C       _fflush
+ 0000:13DD       _flushall
+ 0000:141F       __flushout
+ 0000:148B       _fprintf
+ 0000:14A5       _fputs
+ 0000:155B       _fseek
+ 0000:15C4       _ftell
+ 0000:1691       _perror
+ 0000:1701       __fputc
+ 0000:171C       _fputc
+ 0000:1861       _fputchar
+ 0000:1876       __FPUTN
+ 0000:1A29       _setvbuf
+ 0000:1B0E       ___write
+ 0000:1C33       __xfflush
+ 0000:1C68       __rtl_write
+ 0000:1CA5       __write
+ 0000:1CBD       _localeconv
+ 0000:1CC5       LXMUL@
+ 0000:1CC5       F_LXMUL@
+ 0000:1CDC       N_LDIV@
+ 0000:1CDF       F_LDIV@
+ 0000:1CDF       LDIV@
+ 0000:1CE3       N_LUDIV@
+ 0000:1CE6       F_LUDIV@
+ 0000:1CE6       LUDIV@
+ 0000:1CEB       N_LMOD@
+ 0000:1CEE       F_LMOD@
+ 0000:1CEE       LMOD@
+ 0000:1CF3       N_LUMOD@
+ 0000:1CF6       F_LUMOD@
+ 0000:1CF6       LUMOD@
+ 0000:1D8A       N_LXLSH@
+ 0000:1D8D       LXLSH@
+ 0000:1D8D       F_LXLSH@
+ 0000:1DAB       N_LXMUL@
+ 0000:1DC2       __LONGTOA
+ 0000:1E3F       __UTOA
+ 0000:1E7F       __REALCVT
+ 0000:1E83       operator delete(void near*)
+ 0000:1E93       operator delete[](void near*)
+ 0000:1EA3       operator delete(void far*)
+ 0000:1EC7       operator delete[](void far*)
+ 0000:1EF7       xnew_handler()
+ 0000:1F53       set_new_handler(void(near*)())
+ 0000:1F70       operator new(unsigned int)
+ 0000:2165       ___first
+ 0000:2167       ___last
+ 0000:2169       ___rover
+ 0000:22A5       _farfree
+ 0000:23AF       _farmalloc
+ 0000:2509       _farrealloc
+ 0000:2581       _free
+ 0000:2650       _malloc
+ 0000:27A7       _realloc
+ 0000:2884       __brk
+ 0000:28C7       __sbrk
+ 0000:2956       ___brk
+ 0000:297C       ___sbrk
+ 0000:29B1       _brk
+ 0000:29C1       _sbrk
+ 0000:29D5       _setblock
+ 0000:29F5       F_SCOPY@
+ 0000:29F5       SCOPY@
+ 0000:2A11       N_PADD@
+ 0000:2A14       F_PADD@
+ 0000:2A14       PADD@
+ 0000:2A40       N_PSUB@
+ 0000:2A43       F_PSUB@
+ 0000:2A43       PSUB@
+ 0000:2A71       N_PCMP@
+ 0000:2A92       ___ErrorMessage
+ 0000:2B0D       __graphexit
+ 0000:2B1D       __graphfreemem
+ 0000:2B2D       __graphgetmem
+ 0000:2B3F       _abort
+ 0000:2B4F       _atexit
+ 0000:2BCC       _exit
+ 0000:2BDF       __exit
+ 0000:2BF5       __cexit
+ 0000:2C07       __c_exit
+ 0000:2C17       __abort
+ 0000:2C2C       _getvect
+ 0000:2C3F       _setvect
+ 0000:2E3F       _signal
+ 0000:2F41       _raise
+ 0000:2FB8       terminate()
+ 0000:2FC0       set_terminate(void(near*)())
+ 0000:301E       ___call_terminate
+ 0000:3088       unexpected()
+ 0000:3090       set_unexpected(void(near*)())
+ 0000:30C6       ___call_unexpected
+ 0000:3108       __getpolymorphicdtc(void far*,unsigned int)
+ 0000:316A       __getpolymorphicdtcfar(void far*,unsigned int)
+ 0000:31D0       __ExceptInit
+ 0000:320E       xalloc::xalloc(const string near&,unsigned int)
+ 0000:3277       xalloc::raise()
+ 0000:33E7       xmsg::xmsg(const string near&)
+ 0000:348A       xmsg::xmsg(const xmsg near&)
+ 0000:350B       xmsg::~xmsg()
+ 0000:3563       xmsg::raise()
+ 0000:35C9       xmsg::operator =(const xmsg near&)
+ 0000:36D2       ___JumpToCatch__
+ 0000:4507       _throwexception(void far*,void far*,void far*,void far*,unsigned int,unsigned int,unsigned int,unsigned char near*)
+ 0000:4557       _rethrowexception(unsigned int,unsigned char near*)
+ 0000:4684       __Global_unwind
+ 0000:46CF       _RaiseException
+ 0000:4C8B       _catchcleanup()
+ 0000:52B4       __Local_unwind
+ 0000:52D4       __Return_unwind
+ 0000:5387       __ExceptionHandler
+ 0000:609E       __CurrExcContext
+ 0000:60EF       __throwfilename()
+ 0000:60FC       __throwlinenumber()
+ 0000:6109       __throwexceptionname()
+ 0000:6116       typeinfo::typeinfo(const typeinfo near&)
+ 0000:6171       typeinfo::operator =(const typeinfo near&)
+ 0000:617D       typeinfo::~typeinfo()
+ 0000:61A5       typeinfo::operator ==(const typeinfo near&) const
+ 0000:61C8       typeinfo::operator !=(const typeinfo near&) const
+ 0000:61E2       typeinfo::before(const typeinfo near&) const
+ 0000:6245       typeinfo::name() const
+ 0000:625E       __gettypeinfo(void far*,void far*,void far*,void far*)
+ 0000:654C       __dynamiccast(void far*,void far*,void far*,void far*,int)
+ 0000:6744       __refdestructorcount()
+ 0000:674A       __refexceptionlist()
+ 0000:6750       ___InitExceptBlocks
+ 0000:67B6       ___ExitExceptBlocks
+ 0000:67D7       string::string(const string near&)
+ 0000:6911       string::string(const char near*)
+ 0000:6B81       string::~string()
+ 0000:6C30       string::assert_element(unsigned int) const
+ 0000:6D17       string::assert_index(unsigned int) const
+ 0000:6DFE       tsubstring::assert_element(unsigned int) const
+ 0000:6E9F       tstringref::tstringref(const char near*,unsigned int,const char near*,unsigned int,unsigned int)
+ 0000:6F56       tstringref::~tstringref()
+ 0000:6FB2       tstringref::reserve(unsigned int)
+ 0000:7014       tstringref::check_freeboard()
+ 0000:7078       tstringref::grow_to(unsigned int)
+ 0000:70C9       tstringref::round_capacity(unsigned int)
+ 0000:7116       tstringref::splice(unsigned int,unsigned int,const char near*,unsigned int)
+ 0000:7255       string::set_case_sensitive(int)
+ 0000:7272       string::set_paranoid_check(int)
+ 0000:728F       string::skip_whitespace(int)
+ 0000:72AC       string::initial_capacity(unsigned int)
+ 0000:72C9       string::resize_increment(unsigned int)
+ 0000:72F3       string::max_waste(unsigned int)
+ 0754:0178       ___move
+ 0754:0193       _grapherrormsg
+ 0754:030D       _graphresult
+ 0754:032A       __GraphNotInstalled
+ 0754:03F4       _registerfarbgidriver
+ 0754:04A8       _registerfarbgifont
+ 0754:0593       _setgraphbufsize
+ 0754:05C9       _getmoderange
+ 0754:066D       _detectgraph
+ 0754:08A1       _graphdefaults
+ 0754:0979       _initgraph
+ 0754:0BD6       _installuserdriver
+ 0754:0CBB       _installuserfont
+ 0754:0D62       _setgraphmode
+ 0754:0DE8       _getgraphmode
+ 0754:0E0A       _restorecrtmode
+ 0754:0E3E       _closegraph
+ 0754:0EE5       _cleardevice
+ 0754:0F00       _setviewport
+ 0754:0F77       _getviewsettings
+ 0754:0F96       _clearviewport
+ 0754:1007       _moveto
+ 0754:102E       _moverel
+ 0754:104E       _getx
+ 0754:105D       _gety
+ 0754:106C       _getmaxx
+ 0754:107F       _getmaxy
+ 0754:1092       _getdrivername
+ 0754:10B8       _getmodename
+ 0754:10DC       _lineto
+ 0754:1103       _linerel
+ 0754:113E       _getlinesettings
+ 0754:115D       _setlinestyle
+ 0754:119E       _rectangle
+ 0754:11F4       _getfillsettings
+ 0754:1211       _setfillstyle
+ 0754:1245       _getfillpattern
+ 0754:125E       _setfillpattern
+ 0754:12D5       _arc
+ 0754:1300       _circle
+ 0754:132C       _getaspectratio
+ 0754:134A       _setaspectratio
+ 0754:1362       _pieslice
+ 0754:138D       _setbkcolor
+ 0754:13C7       _getcolor
+ 0754:13D8       _getbkcolor
+ 0754:13E9       _setallpalette
+ 0754:148F       _setpalette
+ 0754:14D2       _getpalette
+ 0754:14F1       _imagesize
+ 0754:1526       _putimage
+ 0754:15AF       _gettextsettings
+ 0754:15CE       _outtext
+ 0754:161A       _settextjustify
+ 0754:165B       _settextstyle
+ 0754:1822       _setusercharsize
+ 0754:1848       _textheight
+ 0754:1859       @dgroup
+ 0754:189D       _postdevice
+ 0754:18B4       __installdevice
+ 0754:18B9       __reinstalldevice
+ 0754:18FD       __gr_setviewport
+ 0754:1929       __gr_setgraphmode
+ 0754:195F       __gr_restorecrtmode
+ 0754:199E       _setvisualpage
+ 0754:19C1       _setactivepage
+ 0754:19E7       _setwritemode
+ 0754:1A0A       __gr_setfillpattern
+ 0754:1A3D       __gr_settextjustify
+ 0754:1A5A       __gr_imagesize
+ 0754:1AAB       __autodetect
+ 0754:1B1C       __gr_detectgraph
+ 0754:1B59       __initdevice
+ 0754:1B7E       __gr_cleardevice
+ 0754:1B95       __gr_moveto
+ 0754:1BB2       __gr_lineto
+ 0754:1BCF       _line
+ 0754:1BF2       _drawpoly
+ 0754:1C12       _fillpoly
+ 0754:1C32       _bar
+ 0754:1C55       _bar3d
+ 0754:1C96       _ellipse
+ 0754:1CC6       _fillellipse
+ 0754:1D03       _sector
+ 0754:1D33       _getarccoords
+ 0754:1D5C       _setcolor
+ 0754:1D7D       _getmaxcolor
+ 0754:1D98       _getpalettesize
+ 0754:1DB3       _getdefaultpalette
+ 0754:1DD0       __gr_getmodename
+ 0754:1DF1       _getmaxmode
+ 0754:1E0D       __gr_setbkcolor
+ 0754:1E2C       _setrgbpalette
+ 0754:1E52       __gr_setpalette
+ 0754:1E71       __gr_setallpalette
+ 0754:1E8C       __gr_setlinestyle
+ 0754:1EB5       _floodfill
+ 0754:1EFA       __gr_setfillstyle
+ 0754:1F2A       _outtextxy
+ 0754:1F60       __gr_settextstyle
+ 0754:1FB1       __gr_setusercharsize
+ 0754:1FD7       _textwidth
+ 0754:2004       __gr_textheight
+ 0754:2025       _getpixel
+ 0754:2046       _putpixel
+ 0754:2066       _getimage
+ 0754:20A3       __gr_putimage
+ 0754:2280       __GRP_ovr
+ 0B15:003F       e087_Trap
+ 0B15:04E0       e087_Entry
+ 0B15:05A3       e087_Shortcut
+ 0B71:213F       e086_Entry
+ 0B71:2151       rs1
+ 0B71:25E9       e287_FPU_Control
+ 0B71:26A2       rs2
+ 0B71:26CD       e086_Shortcut
+ 0B71:273E       EmuVectorException
+ 0DE8:0000       DATASEG@
+ 0DE8:0074       __Int0Vector
+ 0DE8:0078       __Int4Vector
+ 0DE8:007C       __Int5Vector
+ 0DE8:0080       __Int6Vector
+ 0DE8:0084       __C0argc
+ 0DE8:0086       __C0argv
+ 0DE8:0088       __C0environ
+ 0DE8:008A       __envLng
+ 0DE8:008C       __envseg
+ 0DE8:008E       __envSize
+ 0DE8:0090       __psp
+ 0DE8:0092       __version
+ 0DE8:0092       __osversion
+ 0DE8:0092       __osmajor
+ 0DE8:0093       __osminor
+ 0DE8:0094       _errno
+ 0DE8:0096       __Exception_list
+ 0DE8:0098       ___heapbase
+ 0DE8:009A       ___brklvl
+ 0DE8:009C       __heapbase
+ 0DE8:00A0       __brklvl
+ 0DE8:00A4       __heaptop
+ 0DE8:00AA       __BGI_ovr
+ 0DE8:00AE       __BGI_auto
+ 0DE8:0247       __DDO_ADD
+ 0DE8:024B       __BGI_ADD
+ 0DE8:02C4       __gr_ErrCode
+ 0DE8:02C6       __FON_ADD
+ 0DE8:02CA       __StatOfs
+ 0DE8:02CC       __StatSeg
+ 0DE8:02CE       __drawcolor
+ 0DE8:02CF       __fillcolor
+ 0DE8:02D0       __backcolor
+ 0DE8:02D1       __linestyle
+ 0DE8:02D2       __fillstyle
+ 0DE8:02D9       __OverScanColor
+ 0DE8:0720       __8087
+ 0DE8:0722       __default87
+ 0DE8:0724       __protected
+ 0DE8:0726       __LDT
+ 0DE8:0840       __emu
+ 0DE8:0952       __streams
+ 0DE8:0A92       __nfile
+ 0DE8:0A94       __openfd
+ 0DE8:0ABC       __doserrno
+ 0DE8:0ABE       __dosErrorToSV
+ 0DE8:0B80       __sys_errlist
+ 0DE8:0BE0       __sys_nerr
+ 0DE8:0DF6       __localeconvention
+ 0DE8:0E1E       __fpstklen
+ 0DE8:0E52       __heaplen
+ 0DE8:0E54       __stklen
+ 0DE8:0E56       ___xalloc
+ 0DE8:0E5A       __new_handler
+ 0DE8:0E6A       __first
+ 0DE8:0E6C       __last
+ 0DE8:0E6E       __rover
+ 0DE8:0E72       __8086
+ 0DE8:0E74       __atexitcnt
+ 0DE8:0E76       __exitbuf
+ 0DE8:0E78       __exitfopen
+ 0DE8:0E7A       __exitopen
+ 0DE8:0EB8       ___CPPexceptionList
+ 0DE8:0EBC       ___exceptFlags
+ 0DE8:0EBE       ___savedDS
+ 0DE8:0EC0       ___savedSI
+ 0DE8:0EC2       ___terminatePTR
+ 0DE8:0EC6       ___unexpectdPTR
+ 0DE8:0ECA       ___terminate_DS
+ 0DE8:0ECC       ___unexpectd_DS
+ 0DE8:0ECE       ___throwFileName
+ 0DE8:0ED0       ___throwLineNumber
+ 0DE8:0ED2       ___throwExceptionName
+ 0DE8:0ED4       ___exceptStaticBuffP
+ 0DE8:0ED6       ___exceptMemAllocVars
+ 0DE8:0ED8       ___exceptionNameBuff
+ 0DE8:0F58       ___ExceptStaticXbuff
+ 0DE8:0FEA       string::case_sensitive
+ 0DE8:0FEC       string::paranoid_check
+ 0DE8:0FEE       string::skip_white
+ 0DE8:0FF0       string::initial_capac
+ 0DE8:0FF2       string::resize_inc
+ 0DE8:0FF4       string::freeboard
+ 0DE8:1050       __RealCvtVector
+ 0DE8:1054       __ScanTodVector
+ 0DE8:1080       __atexittbl
+ 0DE8:10C0       ___SignalPtr
+ 0DE8:10CA       __DestructorCountPtr
+
+Error: Undefined symbol _main in module c0.asm
+Program entry point at 0000:0000
+

@@ -1,0 +1,776 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GpX Setup File Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,14,20,20
+    LTEXT           "GpX Setup File Editor",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Developer: Viktor Gars\nhttp://www.vgsoftware.com/\nCopyright © 2001 Viktor Gars",
+                    IDC_STATIC,40,25,96,26
+    DEFPUSHBUTTON   "OK",IDC_BUTTON_OK,178,7,50,14,WS_GROUP
+    LTEXT           "This Tool is provided ""as is"" without warranty of any kind, either expressed or implied. The author will not be held responsible for any losses incurred, either directly or indirectly by the use of this Tool.",
+                    IDC_STATIC,13,65,213,27
+    GROUPBOX        "Disclaimer",IDC_STATIC,7,55,221,41
+END
+
+IDD_GP3SETUPSPLITER_DIALOG DIALOGEX 0, 0, 400, 186
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GpX Setup File Editor"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,0,399,1
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | 
+                    TVS_TRACKSELECT | WS_BORDER | WS_TABSTOP,7,7,129,172,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_TAB_HOLDER,141,7,50,14,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GpX Setup File Editor\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GpX Setup File Editor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GpX Setup File Editor.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GpX Setup File Editor\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_GP3SETUPSPLITER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MISC DIALOG DISCARDABLE  0, 0, 228, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Misc Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Gear Ratios",IDC_FRAME_GEARRATIONS,7,7,98,95
+    LTEXT           "1st Gear (16-75):",IDC_LABLE_GEAR_1,15,18,54,8
+    EDITTEXT        IDC_EDIT_GEAR_1,73,16,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_GEAR_1,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,18,11,8
+    LTEXT           "2nd Gear (17-76):",IDC_LABLE_GEAR_2,15,31,56,8
+    EDITTEXT        IDC_EDIT_GEAR_2,73,29,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_GEAR_2,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,31,11,8
+    LTEXT           "3rd Gear (18-77):",IDC_LABLE_GEAR_3,15,44,54,8
+    EDITTEXT        IDC_EDIT_GEAR_3,73,42,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_GEAR_3,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,44,11,8
+    LTEXT           "4th Gear (19-78):",IDC_LABLE_GEAR_4,15,57,54,8
+    EDITTEXT        IDC_EDIT_GEAR_4,73,55,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_GEAR_4,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,57,11,8
+    LTEXT           "5th Gear (20-79):",IDC_LABLE_GEAR_5,15,70,54,8
+    EDITTEXT        IDC_EDIT_GEAR_5,73,68,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_GEAR_5,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,70,11,8
+    LTEXT           "6th Gear (21-80):",IDC_LABLE_GEAR_6,15,83,54,8
+    EDITTEXT        IDC_EDIT_GEAR_6,73,81,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_GEAR_6,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,83,11,8
+    GROUPBOX        "Wing Settings",IDC_FRAME_MISCSETTINGS,7,112,98,40
+    LTEXT           "Front Wing (1-20):",IDC_LABLE_FRONTWING,13,125,58,8
+    EDITTEXT        IDC_EDIT_MISC_FRONT_WING,73,123,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin10",IDC_SPIN_MISC_FRONT_WING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,125,11,8
+    LTEXT           "Rear Wing (1-20):",IDC_LABLE_REARWING,13,138,57,8
+    EDITTEXT        IDC_EDIT_MISC_REAR_WING,73,136,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin11",IDC_SPIN_MISC_REAR_WING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,98,138,11,8
+    GROUPBOX        "Pit Stop Stategy",IDC_FRAME_PITSTOP,109,7,112,64
+    CONTROL         "None Pit Stops",IDC_RADIO_PITSTOP_NONE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,117,18,63,8
+    CONTROL         "One Pit Stop:",IDC_RADIO_PITSTOP_ONE_STOP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,117,31,63,8
+    EDITTEXT        IDC_EDIT_PITSTOP_FIRSTSTOP,186,29,27,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PITSTOP_FIRSTSTOP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,208,31,11,8
+    CONTROL         "Two Pit Stops:",IDC_RADIO_PITSTOP_TWO_STOPS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,117,44,63,8
+    EDITTEXT        IDC_EDIT_PITSTOP_SECONDSTOP,186,42,27,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_PITSTOP_SECONDSTOP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,208,44,11,8
+    CONTROL         "Three Pit Stops:",IDC_RADIO_PITSTOP_THREE_STOPS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,117,57,63,8
+    EDITTEXT        IDC_EDIT_PITSTOP_THIRDSTOP,186,55,27,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin3",IDC_SPIN_PITSTOP_THIRDSTOP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,208,57,11,8
+    GROUPBOX        "Brake Balance",IDC_FRAME_BRAKE_BALANCE,109,72,112,35
+    CTEXT           "Static",IDC_LABLE_BRAKE_BALANCE_DISPLAY,113,81,105,8
+    CONTROL         "Slider1",IDC_SLIDER_BRAKE_BALANCE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,113,90,105,15
+    GROUPBOX        "Gp3 Setup Settings",IDC_FRAME_GP3_SETUP,109,112,112,40
+    LTEXT           "Tyre Choice:",IDC_LABLE_TYRECHOICE,117,123,41,8
+    COMBOBOX        IDC_COMBO_MISC_TYRE_CHOICE,161,121,55,64,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Differential:",IDC_LABLE_DIFFERENTIAL,117,136,39,8
+    COMBOBOX        IDC_COMBO_DIFFERENTIAL,161,134,55,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FRONT DIALOG DISCARDABLE  0, 0, 250, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Front Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Left",IDC_FRAME_LEFT_FRONT,7,7,116,106
+    LTEXT           "Packers (0-40):",IDC_LABLE_LEFT_FRONT_PACKERS,14,18,76,
+                    8
+    EDITTEXT        IDC_EDIT_LEFT_FRONT_PACKERS,92,16,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LEFT_FRONT_PACKERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,18,11,8
+    LTEXT           "Dumper fast bump (0-8):",IDC_LABLE_LEFT_FRONT_DUMPER,14,
+                    31,76,8
+    EDITTEXT        IDC_EDIT_LEFT_FRONT_DUMPER,92,29,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin6",IDC_SPIN_LEFT_FRONT_DUMPER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,31,11,8
+    LTEXT           "Fast rebound (0-8):",IDC_LABLE_LEFT_FRONT_FASTREBOUND,
+                    14,44,76,8
+    EDITTEXT        IDC_EDIT_LEFT_FRONT_FAST_REBOUND,92,42,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_LEFT_FRONT_FAST_REBOUND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,44,11,8
+    LTEXT           "Slow bump (0-24):",IDC_LABLE_LEFT_FRONT_SLOWBUMP,14,57,
+                    76,8
+    EDITTEXT        IDC_EDIT_LEFT_FRONT_SLOW_BUMP,92,55,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_LEFT_FRONT_SLOW_BUMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,57,11,8
+    LTEXT           "Slow rebound (0-24):",IDC_LABLE_LEFT_FRONT_SLOWREBOUND,
+                    14,70,76,8
+    EDITTEXT        IDC_EDIT_LEFT_FRONT_SLOW_REBOUND,92,68,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin5",IDC_SPIN_LEFT_FRONT_SLOW_REBOUND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,70,11,8
+    LTEXT           "Spring:",IDC_LABLE_LEFT_FRONT_SPRING,14,83,60,8
+    COMBOBOX        IDC_COMBO_LEFT_FRONT_SPRING,77,81,40,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ride Height:",IDC_LABLE_LEFT_FRONT_RIDEHEIGHT,14,96,39,
+                    8
+    LTEXT           "15.5",IDC_LABLE_LEFT_FRONT_RIDEHEIGHT_DISPLAY,57,96,16,
+                    8
+    CONTROL         "Slider1",IDC_SLIDER_LEFT_FRONT_RIDEHEIGHT,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    72,95,49,12
+    GROUPBOX        "Right",IDC_FRAME_RIGHT_FRONT,127,7,116,106
+    LTEXT           "Packers (0-40):",IDC_LABLE_RIGHT_FRONT_PACKERS,134,18,
+                    76,8
+    EDITTEXT        IDC_EDIT_RIGHT_FRONT_PACKERS,212,16,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RIGHT_FRONT_PACKERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,18,11,8
+    LTEXT           "Dumper fast bump (0-8):",IDC_LABLE_RIGHT_FRONT_DAMPER,
+                    134,31,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_FRONT_DUMPER,212,29,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin6",IDC_SPIN_RIGHT_FRONT_DUMPER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,31,11,8
+    LTEXT           "Fast rebound (0-8):",IDC_LABLE_RIGHT_FRONT_FASTREBOUND,
+                    134,44,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_FRONT_FAST_REBOUND,212,42,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_RIGHT_FRONT_FAST_REBOUND,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,230,44,11,8
+    LTEXT           "Slow bump (0-24):",IDC_LABLE_RIGHT_FRONT_SLOWBUMP,134,
+                    57,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_FRONT_SLOW_BUMP,212,55,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_RIGHT_FRONT_SLOW_BUMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,57,11,8
+    LTEXT           "Slow rebound (0-24):",IDC_LABLE_RIGHT_FRONT_SLOWREBOUND,
+                    134,70,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_FRONT_SLOW_REBOUND,212,68,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin5",IDC_SPIN_RIGHT_FRONT_SLOW_REBOUND,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,230,70,11,8
+    LTEXT           "Spring:",IDC_LABLE_RIGHT_FRONT_SPRING,134,83,60,8
+    COMBOBOX        IDC_COMBO_RIGHT_FRONT_SPRING,197,81,40,74,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ride Height:",IDC_LABLE_RIGHT_FRONT_RIDEHEIGHT,134,96,
+                    39,8
+    LTEXT           "15.5",IDC_LABLE_RIGHT_FRONT_RIDEHEIGHT_DISPLAY,176,96,
+                    16,8
+    CONTROL         "Slider1",IDC_SLIDER_RIGHT_FRONT_RIDEHEIGHT,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    192,95,49,12
+    GROUPBOX        "Anti Roll Bar",IDC_FRAME_FRONT_ANTIROLLBAR,7,116,116,26
+    LTEXT           "Anti roll bar:",IDC_LABLE_FRONT_ANTIROLLBAR,14,127,37,8
+    COMBOBOX        IDC_COMBO_FRONT_ANTIROLLBAR,77,125,40,77,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_REAR DIALOG DISCARDABLE  0, 0, 250, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rear Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Left",IDC_FRAME_LEFT_REAR,7,7,116,106
+    LTEXT           "Packers (0-80):",IDC_LABLE_LEFT_REAR_PACKERS,14,18,76,8
+    EDITTEXT        IDC_EDIT_LEFT_REAR_PACKERS,92,16,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LEFT_REAR_PACKERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,18,11,8
+    LTEXT           "Dumper fast bump (0-8):",IDC_LABLE_LEFT_REAR_DUMPER,14,
+                    31,76,8
+    EDITTEXT        IDC_EDIT_LEFT_REAR_DUMPER,92,29,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin6",IDC_SPIN_LEFT_REAR_DUMPER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,31,11,8
+    LTEXT           "Fast rebound (0-8):",IDC_LABLE_LEFT_REAR_FASTREBOUND,14,
+                    44,76,8
+    EDITTEXT        IDC_EDIT_LEFT_REAR_FAST_REBOUND,92,42,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_LEFT_REAR_FAST_REBOUND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,44,11,8
+    LTEXT           "Slow bump (0-24):",IDC_LABLE_LEFT_REAR_SLOWBUMP,14,57,
+                    76,8
+    EDITTEXT        IDC_EDIT_LEFT_REAR_SLOW_BUMP,92,55,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_LEFT_REAR_SLOW_BUMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,57,11,8
+    LTEXT           "Slow rebound (0-24):",IDC_LABLE_LEFT_REAR_SLOWREBOUND,
+                    14,70,76,8
+    EDITTEXT        IDC_EDIT_LEFT_REAR_SLOW_REBOUND,92,68,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin5",IDC_SPIN_LEFT_REAR_SLOW_REBOUND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,117,70,11,8
+    LTEXT           "Spring:",IDC_LABLE_LEFT_REAR_SPRING,14,83,60,8
+    COMBOBOX        IDC_COMBO_LEFT_REAR_SPRING,77,81,40,76,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ride Height:",IDC_LABLE_LEFT_REAR_RIDEHEIGHT,14,96,39,8
+    LTEXT           "15.5",IDC_LABLE_LEFT_REAR_RIDEHEIGHT_DISPLAY,57,96,16,8
+    CONTROL         "Slider1",IDC_SLIDER_LEFT_REAR_RIDEHEIGHT,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    72,95,49,12
+    GROUPBOX        "Right",IDC_FRAME_RIGHT_REAR,127,7,116,106
+    LTEXT           "Packers (0-80):",IDC_LABLE_RIGHT_REAR_PACKERS,134,18,76,
+                    8
+    EDITTEXT        IDC_EDIT_RIGHT_REAR_PACKERS,212,16,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RIGHT_REAR_PACKERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,18,11,8
+    LTEXT           "Dumper fast bump (0-8):",IDC_LABLE_RIGHT_REAR_DUMPER,
+                    134,31,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_REAR_DUMPER,212,29,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin6",IDC_SPIN_RIGHT_REAR_DUMPER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,31,11,8
+    LTEXT           "Fast rebound (0-8):",IDC_LABLE_RIGHT_REAR_FASTREBOUND,
+                    134,44,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_REAR_FAST_REBOUND,212,42,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_RIGHT_REAR_FAST_REBOUND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,44,11,8
+    LTEXT           "Slow bump (0-24):",IDC_LABLE_RIGHT_REAR_SLOWBUMP,134,57,
+                    76,8
+    EDITTEXT        IDC_EDIT_RIGHT_REAR_SLOW_BUMP,212,55,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_SPIN_RIGHT_REAR_SLOW_BUMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,57,11,8
+    LTEXT           "Slow rebound (0-24):",IDC_LABLE_RIGHT_REAR_SLOWREBOUND,
+                    134,70,76,8
+    EDITTEXT        IDC_EDIT_RIGHT_REAR_SLOW_REBOUND,212,68,25,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin5",IDC_SPIN_RIGHT_REAR_SLOW_REBOUND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,230,70,11,8
+    LTEXT           "Spring:",IDC_LABLE_RIGHT_REAR_SPRING,134,83,60,8
+    COMBOBOX        IDC_COMBO_RIGHT_REAR_SPRING,197,81,40,78,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ride Height:",IDC_LABLE_RIGHT_REAR_RIDEHEIGHT,134,96,39,
+                    8
+    LTEXT           "15.5",IDC_LABLE_RIGHT_REAR_RIDEHEIGHT_DISPLAY,176,96,16,
+                    8
+    CONTROL         "Slider1",IDC_SLIDER_RIGHT_REAR_RIDEHEIGHT,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    192,95,49,12
+    GROUPBOX        "Anti Roll Bar",IDC_FRAME_REAR_ANTIROLLBAR,7,116,116,26
+    LTEXT           "Anti roll bar:",IDC_LABLE_REAR_ANTIROLLBAR,14,127,37,8
+    COMBOBOX        IDC_COMBO_REAR_ANTIROLLBAR,77,125,40,76,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MISC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_FRONT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_REAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gp3 Setup Spliter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Gp3 Setup Spliter.ico"
+IDI_CLOSED              ICON    DISCARDABLE     "res\\Folder.ico"
+IDI_OPEN                ICON    DISCARDABLE     "res\\OpenFolder.ico"
+IDI_SETUP               ICON    DISCARDABLE     "res\\GP2SETUP.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MISC DLGINIT
+BEGIN
+    IDC_COMBO_MISC_TYRE_CHOICE, 0x403, 10, 0
+0x6f53, 0x7466, 0x4420, 0x7972, 0x0073, 
+    IDC_COMBO_MISC_TYRE_CHOICE, 0x403, 10, 0
+0x6148, 0x6472, 0x4420, 0x7972, 0x0073, 
+    IDC_COMBO_MISC_TYRE_CHOICE, 0x403, 13, 0
+0x6e49, 0x6574, 0x6d72, 0x6465, 0x6169, 0x6574, "\000" 
+    IDC_COMBO_MISC_TYRE_CHOICE, 0x403, 10, 0
+0x6148, 0x6472, 0x5720, 0x7465, 0x0073, 
+    IDC_COMBO_MISC_TYRE_CHOICE, 0x403, 10, 0
+0x6f53, 0x7466, 0x5720, 0x7465, 0x0073, 
+    IDC_COMBO_MISC_TYRE_CHOICE, 0x403, 8, 0
+0x6f4d, 0x736e, 0x6f6f, 0x006e, 
+    IDC_COMBO_DIFFERENTIAL, 0x403, 4, 0
+0x6f4c, 0x0077, 
+    IDC_COMBO_DIFFERENTIAL, 0x403, 7, 0
+0x654d, 0x6964, 0x6d75, "\000" 
+    IDC_COMBO_DIFFERENTIAL, 0x403, 5, 0
+0x6948, 0x6867, "\000" 
+    0
+END
+
+IDD_FRONT DLGINIT
+BEGIN
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 4, 0
+0x3039, 0x0030, 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3131, 0x3030, "\000" 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3331, 0x3030, "\000" 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3431, 0x3030, "\000" 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3531, 0x3030, "\000" 
+    IDC_COMBO_LEFT_FRONT_SPRING, 0x403, 5, 0
+0x3631, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 4, 0
+0x3039, 0x0030, 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3131, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3331, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3431, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3531, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_FRONT_SPRING, 0x403, 5, 0
+0x3631, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 4, 0
+0x3035, 0x0030, 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3531, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3032, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3033, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3034, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3535, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 5, 0
+0x3537, 0x3030, "\000" 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 6, 0
+0x3031, 0x3030, 0x0030, 
+    IDC_COMBO_FRONT_ANTIROLLBAR, 0x403, 6, 0
+0x3231, 0x3035, 0x0030, 
+    0
+END
+
+IDD_REAR DLGINIT
+BEGIN
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 4, 0
+0x3037, 0x0030, 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 4, 0
+0x3039, 0x0030, 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 5, 0
+0x3131, 0x3030, "\000" 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 5, 0
+0x3331, 0x3030, "\000" 
+    IDC_COMBO_LEFT_REAR_SPRING, 0x403, 5, 0
+0x3431, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 4, 0
+0x3037, 0x0030, 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 4, 0
+0x3039, 0x0030, 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 5, 0
+0x3131, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 5, 0
+0x3331, 0x3030, "\000" 
+    IDC_COMBO_RIGHT_REAR_SPRING, 0x403, 5, 0
+0x3431, 0x3030, "\000" 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3034, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3535, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 4, 0
+0x3537, 0x0030, 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_REAR_ANTIROLLBAR, 0x403, 5, 0
+0x3231, 0x3035, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New...\tCtrl+N",             ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close\tCtrl+C",              ID_FILE_CLOSE
+        MENUITEM "Close all",                   ID_FILE_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save As Gp2...",              ID_FILE_SAVEASGP2
+        MENUITEM "Save As Gp3...",              ID_FILE_SAVEASGP3
+        MENUITEM SEPARATOR
+        MENUITEM "Extract As Gp2...",           ID_FILE_EXTRACTASGP2
+        MENUITEM "Extract As Gp3...",           ID_FILE_EXTRACTASGP3
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl+X",               ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+P",              ID_EDIT_PASTE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VG Software Online...",       ID_HELP_VGSOFTWAREONLINE
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "SINGLE"
+    BEGIN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Save As Gp2...",              ID_FILE_SAVEASGP2
+        MENUITEM "Save As Gp3...",              ID_FILE_SAVEASGP3
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID_FILE_CLOSE
+    END
+    POPUP "MULTIMENU"
+    BEGIN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Save As Gp2...",              ID_FILE_SAVEASGP2
+        MENUITEM "Save As Gp3...",              ID_FILE_SAVEASGP3
+        MENUITEM SEPARATOR
+        MENUITEM "Extract As Gp2...",           ID_FILE_EXTRACTASGP2
+        MENUITEM "Extract As Gp3...",           ID_FILE_EXTRACTASGP3
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID_FILE_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_OPEN                BITMAP  DISCARDABLE     "res\\OPEN.BMP"
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Gp3 Setup Spliter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

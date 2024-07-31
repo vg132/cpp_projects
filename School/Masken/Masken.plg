@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Masken - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Masken.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\My Documents\Mina Program\C++\Masken\Dot.cpp"
+"C:\My Documents\Mina Program\C++\Masken\Grafik.cpp"
+"C:\My Documents\Mina Program\C++\Masken\Main.cpp"
+"C:\My Documents\Mina Program\C++\Masken\Mask.cpp"
+"C:\My Documents\Mina Program\C++\Masken\test.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10D.tmp" 
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Masken.pdb" /debug /machine:I386 /out:"Debug/Masken.exe" /pdbtype:sept 
+".\Debug\Dot.obj"
+".\Debug\Grafik.obj"
+".\Debug\Main.obj"
+".\Debug\Mask.obj"
+".\Debug\MaskPart.obj"
+".\Debug\test.obj"
+]
+Creating command line "link.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10E.tmp"
+<h3>Output Window</h3>
+Compiling...
+Dot.cpp
+c:\my documents\mina program\c++\masken\dot.h(15) : error C2061: syntax error : identifier 'Grafik'
+c:\my documents\mina program\c++\masken\dot.h(16) : error C2061: syntax error : identifier 'Grafik'
+c:\my documents\mina program\c++\masken\dot.cpp(11) : error C2065: 'Grafik' : undeclared identifier
+c:\my documents\mina program\c++\masken\dot.cpp(11) : error C2146: syntax error : missing ')' before identifier 'g'
+c:\my documents\mina program\c++\masken\dot.cpp(11) : error C2182: 'PaintNewDot' : illegal use of type 'void'
+c:\my documents\mina program\c++\masken\dot.cpp(11) : error C2350: 'CDot::PaintNewDot' is not a static member
+c:\my documents\mina program\c++\masken\dot.cpp(11) : error C2059: syntax error : ')'
+c:\my documents\mina program\c++\masken\dot.cpp(12) : error C2143: syntax error : missing ';' before '{'
+c:\my documents\mina program\c++\masken\dot.cpp(12) : error C2447: missing function header (old-style formal list?)
+c:\my documents\mina program\c++\masken\dot.cpp(39) : error C2146: syntax error : missing ')' before identifier 'g'
+c:\my documents\mina program\c++\masken\dot.cpp(39) : error C2182: 'RemoveDot' : illegal use of type 'void'
+c:\my documents\mina program\c++\masken\dot.cpp(39) : error C2350: 'CDot::RemoveDot' is not a static member
+c:\my documents\mina program\c++\masken\dot.cpp(39) : error C2059: syntax error : ')'
+c:\my documents\mina program\c++\masken\dot.cpp(40) : error C2143: syntax error : missing ';' before '{'
+c:\my documents\mina program\c++\masken\dot.cpp(40) : error C2447: missing function header (old-style formal list?)
+Grafik.cpp
+c:\my documents\mina program\c++\masken\grafik.h(1) : fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
+Main.cpp
+c:\my documents\mina program\c++\masken\grafik.h(1) : fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
+Mask.cpp
+c:\my documents\mina program\c++\masken\grafik.h(1) : fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
+test.cpp
+c:\my documents\mina program\c++\masken\grafik.h(1) : fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Masken.exe - 19 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

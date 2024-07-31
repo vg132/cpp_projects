@@ -1,0 +1,830 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Mp3 File Studio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,14,20,20
+    LTEXT           "Mp3 File Studio",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Developer: Viktor Gars\nhttp://www.vgsoftware.com/\nCopyright © 2001 Viktor Gars",
+                    IDC_STATIC,40,25,96,26
+    DEFPUSHBUTTON   "OK",IDC_OK,178,7,50,14,WS_GROUP
+    LTEXT           "This Tool is provided ""as is"" without warranty of any kind, either expressed or implied. The author will not be held responsible for any losses incurred, either directly or indirectly by the use of this Tool.",
+                    IDC_STATIC,13,65,213,27
+    GROUPBOX        "Disclaimer",IDC_STATIC,7,56,221,41
+END
+
+IDD_MP3FILESTUDIO DIALOGEX 0, 0, 338, 234
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Mp3 File Studio [Public Beta 2] - (C) VG Software 2001"
+MENU IDR_MAIN
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DRIVEPICKER,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,35,6,198,198
+    CONTROL         "List1",IDC_FILELIST,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | 
+                    WS_BORDER | WS_TABSTOP,7,22,324,87,WS_EX_CLIENTEDGE
+    LTEXT           "Look in:",IDC_STATIC,7,8,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,337,1,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Button1",IDC_TEST,7,113,50,14,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "VG Software\0"
+            VALUE "FileDescription", "Mp3 File Studio\0"
+            VALUE "FileVersion", "Public Beta 2\0"
+            VALUE "InternalName", "Mp3 File Studio\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Mp3FileStudio.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Mp3 File Studio\0"
+            VALUE "ProductVersion", "Public Beta 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_MP3FILESTUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Mp3FileStudio..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TAGEDIT DIALOGEX 0, 0, 317, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag Edit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "MP3 Tag Data",IDC_STATIC_TAGFRAME,7,7,171,84
+    LTEXT           "&Artist:",IDC_STATIC_ARTIST,13,35,18,8
+    LTEXT           "&Album:",IDC_STATIC_ALBUM,13,48,22,8
+    LTEXT           "&Year:",IDC_STATIC_YEAR,13,61,18,8
+    LTEXT           "&Title",IDC_STATIC_TITLE,13,22,14,8
+    LTEXT           "&Genre:",IDC_STATIC_GENRE,81,61,22,8
+    LTEXT           "&Comments:",IDC_STATIC_COMMENTS,13,74,36,8
+    EDITTEXT        IDC_TITLE,51,20,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ARTIST,51,33,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALBUM,51,46,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YEAR,51,59,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMENTS,51,72,71,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_GENRE,104,59,66,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "File Info",IDC_STATIC_FILEINFO,177,7,133,84
+    LTEXT           "File Size:",IDC_FILESIZE,183,16,122,8
+    LTEXT           "Length:",IDC_LENGTH,183,24,122,8
+    LTEXT           "MPEG Version",IDC_MPEGVERSION,183,32,122,8
+    LTEXT           "Bitrate, frames",IDC_BITRATE,183,40,122,8
+    LTEXT           "freq, channel mode",IDC_FREQUENCY,183,48,122,8
+    LTEXT           "crc",IDC_CRC,183,64,122,8
+    LTEXT           "copyrighted",IDC_COPYRIGHT,183,56,122,8
+    LTEXT           "original",IDC_ORIGINAL,183,72,122,8
+    LTEXT           "emphasis",IDC_EMPHASIS,183,80,122,8
+    CONTROL         " Auto Save",IDC_AUTOSAVE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,124,7,46,8,WS_EX_RIGHT
+    LTEXT           "Track:",IDC_STATIC_TRACK,124,74,22,8
+    EDITTEXT        IDC_TRACK,149,72,21,12,ES_AUTOHSCROLL
+END
+
+IDD_AUTOTAGEDIT DIALOG DISCARDABLE  0, 0, 317, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Name to Mp3 Tag"
+MENU IDR_MAIN
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,303,84
+    LTEXT           "File Name Filter",IDC_STATIC,13,17,52,10
+    EDITTEXT        IDC_TAG_EDIT_FILEFILTER,13,27,87,13,ES_AUTOHSCROLL
+    LTEXT           "%1=Artist, %2=Title, %3=Album, %4=Year, %5=Comment, %6=Track, %7=Ignore",
+                    IDC_STATIC,13,47,86,38
+    GROUPBOX        "Defaults",IDC_STATIC,107,7,203,46
+    LTEXT           "Artist",IDC_STATIC,114,18,16,8
+    CONTROL         "On",IDC_TAG_CHECK_ARTIST,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,152,18,22,8
+    EDITTEXT        IDC_TAG_EDIT_ARTIST,114,28,60,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Album",IDC_STATIC,178,18,20,8
+    CONTROL         "On",IDC_TAG_CHECK_ALBUM,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,216,18,22,8
+    EDITTEXT        IDC_TAG_EDIT_ALBUM,178,28,60,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Year",IDC_STATIC,242,18,16,8
+    CONTROL         "On",IDC_TAG_CHECK_YEAR,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,280,18,22,8
+    EDITTEXT        IDC_TAG_EDIT_YEAR,242,28,60,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Scope",IDC_STATIC,221,48,89,43
+    CONTROL         "Selected File",IDC_RADIO_CURFILE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,228,60,73,8
+    CONTROL         "Current Folder",IDC_RADIO_CURDIR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,228,69,73,8
+    CONTROL         "Sub Folders",IDC_RADIO_SUBDIR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,228,78,59,8
+    PUSHBUTTON      "Create Tag(s)",IDC_BUTTON_CREATETAG,133,65,68,14
+    GROUPBOX        "File Name to Mp3 Tag",IDC_STATIC,7,7,101,84
+END
+
+IDD_AUTOFILENAME DIALOG DISCARDABLE  0, 0, 317, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mp3 Tag to File Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,303,84
+    LTEXT           "File Name Layout",IDC_STATIC,13,17,87,10
+    EDITTEXT        IDC_FILENAME_EDIT_FILENAMELAYOUT,13,27,87,13,
+                    ES_AUTOHSCROLL
+    LTEXT           "%1=Artist, %2=Title, %3=Album, %4=Year, %5=Comment, %6=Track",
+                    IDC_STATIC,13,47,84,38
+    GROUPBOX        "Scope",IDC_STATIC,107,7,89,43
+    CONTROL         "Selected File",IDC_RADIO_FILENAME_CURFILE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,114,19,73,8
+    CONTROL         "Current Folder",IDC_RADIO_FILENAME_CURDIR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,114,28,73,8
+    CONTROL         "Sub Folders",IDC_RADIO_FILENAME_SUBDIR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,114,37,59,8
+    PUSHBUTTON      "Create File Name(s)",IDC_BUTTON_CREATEFILENAME,117,63,
+                    68,14
+    GROUPBOX        "Mp3 Tag to File Name",IDC_STATIC,7,7,101,84
+    GROUPBOX        "",IDC_STATIC,107,45,89,46
+END
+
+IDD_FILEORGINIZER DIALOGEX 0, 0, 317, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Orginizer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,303,84
+    LTEXT           "File Name Layout",IDC_STATIC,13,17,87,10
+    EDITTEXT        IDC_EDIT_FOLDERLAYOUT,13,27,87,13,ES_AUTOHSCROLL
+    LTEXT           "%1=Artist, %2=Title, %3=Album, %4=Year, %5=Comment, %6=Genre",
+                    IDC_STATIC,13,41,88,24
+    GROUPBOX        "Scope",IDC_STATIC,107,7,89,43
+    CONTROL         "Selected File",IDC_RADIO_ORGINIZER_CURFILE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,114,19,73,8
+    CONTROL         "Current Folder",IDC_RADIO_ORGINIZER_CURDIR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,114,28,73,8
+    CONTROL         "Sub Folders",IDC_RADIO_ORGINIZER_SUBDIR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,114,37,59,8
+    PUSHBUTTON      "Orginize File(s)",IDC_BUTTON_ORGINIZEFILES,109,50,86,18,
+                    WS_DISABLED,WS_EX_CLIENTEDGE
+    GROUPBOX        "Mp3 File Orgenizer",IDC_STATIC,7,7,101,62
+    GROUPBOX        "Preview",IDC_STATIC,195,7,115,84
+    CONTROL         "Tree2",IDC_FILEORGINIZER_PREVIEW,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,201,17,102,67,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_FILEORGINIZER_TARGETDIR,13,73,87,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Target Directory",IDC_STATIC,7,64,189,27
+    PUSHBUTTON      "...",IDC_FILEORGINIZER_BROWSE,101,73,15,12
+    CONTROL         "Copy",IDC_RADIO_COPY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,119,75,32,10
+    CONTROL         "Move",IDC_RADIO_MOVE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,155,75,34,10
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 251, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_PROGRESS_TEXT,7,41,237,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    CONTROL         "Progress1",IDC_PROGRESS_BAR,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,7,55,237,14,WS_EX_CLIENTEDGE
+    LTEXT           "Static",IDC_HEADER,7,30,237,8
+END
+
+IDD_SETTINGS DIALOG DISCARDABLE  0, 0, 317, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,303,84
+    CONTROL         "Auto new tag",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,45,60,87,10
+    EDITTEXT        IDC_MP3PLAYER,14,26,135,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Select Mp3 Player",IDC_STATIC,14,17,58,8
+    GROUPBOX        "Mp3 File Studio - Settings",IDC_STATIC,7,7,223,84
+    PUSHBUTTON      "...",IDC_BROWSE_MP3PLAYER,150,26,14,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TAGEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_AUTOTAGEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_AUTOFILENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_FILEORGINIZER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Mp3FileStudio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Mp3FileStudio.ico"
+IDI_MP3ICON             ICON    DISCARDABLE     "RES\\Mp3File.ico"
+IDI_FOLDERCLOSED        ICON    DISCARDABLE     "RES\\ClosedFolder.ico"
+IDI_FOLDEROPEN          ICON    DISCARDABLE     "RES\\OpenFolder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TAGEDIT DLGINIT
+BEGIN
+    IDC_GENRE, 0x403, 6, 0
+0x6c42, 0x6575, 0x0073, 
+    IDC_GENRE, 0x403, 13, 0
+0x6c43, 0x7361, 0x6973, 0x2063, 0x6f52, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 8, 0
+0x6f43, 0x6e75, 0x7274, 0x0079, 
+    IDC_GENRE, 0x403, 6, 0
+0x6144, 0x636e, 0x0065, 
+    IDC_GENRE, 0x403, 6, 0
+0x6944, 0x6373, 0x006f, 
+    IDC_GENRE, 0x403, 5, 0
+0x7546, 0x6b6e, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x7247, 0x6e75, 0x6567, "\000" 
+    IDC_GENRE, 0x403, 8, 0
+0x6948, 0x2d70, 0x6f48, 0x0070, 
+    IDC_GENRE, 0x403, 5, 0
+0x614a, 0x7a7a, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x654d, 0x6174, 0x006c, 
+    IDC_GENRE, 0x403, 8, 0
+0x654e, 0x2077, 0x6741, 0x0065, 
+    IDC_GENRE, 0x403, 7, 0
+0x6c4f, 0x6964, 0x7365, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    IDC_GENRE, 0x403, 4, 0
+0x6f50, 0x0070, 
+    IDC_GENRE, 0x403, 4, 0
+0x2652, 0x0042, 
+    IDC_GENRE, 0x403, 4, 0
+0x6152, 0x0070, 
+    IDC_GENRE, 0x403, 7, 0
+0x6552, 0x6767, 0x6561, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x6f52, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x6554, 0x6863, 0x6f6e, "\000" 
+    IDC_GENRE, 0x403, 11, 0
+0x6e49, 0x7564, 0x7473, 0x6972, 0x6c61, "\000" 
+    IDC_GENRE, 0x403, 12, 0
+0x6c41, 0x6574, 0x6e72, 0x7461, 0x7669, 0x0065, 
+    IDC_GENRE, 0x403, 4, 0
+0x6b53, 0x0061, 
+    IDC_GENRE, 0x403, 12, 0
+0x6544, 0x7461, 0x2068, 0x654d, 0x6174, 0x006c, 
+    IDC_GENRE, 0x403, 7, 0
+0x7250, 0x6e61, 0x736b, "\000" 
+    IDC_GENRE, 0x403, 11, 0
+0x6f53, 0x6e75, 0x7464, 0x6172, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 12, 0
+0x7545, 0x6f72, 0x542d, 0x6365, 0x6e68, 0x006f, 
+    IDC_GENRE, 0x403, 8, 0
+0x6d41, 0x6962, 0x6e65, 0x0074, 
+    IDC_GENRE, 0x403, 9, 0
+0x7254, 0x7069, 0x4820, 0x706f, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x6f56, 0x6163, 0x006c, 
+    IDC_GENRE, 0x403, 10, 0
+0x614a, 0x7a7a, 0x462b, 0x6e75, 0x006b, 
+    IDC_GENRE, 0x403, 7, 0
+0x7546, 0x6973, 0x6e6f, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x7254, 0x6e61, 0x6563, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x6c43, 0x7361, 0x6973, 0x6163, 0x006c, 
+    IDC_GENRE, 0x403, 13, 0
+0x6e49, 0x7473, 0x7572, 0x656d, 0x746e, 0x6c61, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x6341, 0x6469, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x6f48, 0x7375, 0x0065, 
+    IDC_GENRE, 0x403, 5, 0
+0x6147, 0x656d, "\000" 
+    IDC_GENRE, 0x403, 11, 0
+0x6f53, 0x6e75, 0x2064, 0x6c43, 0x7069, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x6f47, 0x7073, 0x6c65, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x6f4e, 0x7369, 0x0065, 
+    IDC_GENRE, 0x403, 10, 0
+0x6c41, 0x2e74, 0x5220, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 5, 0
+0x6142, 0x7373, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x6f53, 0x6c75, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x7550, 0x6b6e, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x7053, 0x6361, 0x0065, 
+    IDC_GENRE, 0x403, 11, 0
+0x654d, 0x6964, 0x6174, 0x6974, 0x6576, "\000" 
+    IDC_GENRE, 0x403, 17, 0
+0x6e49, 0x7473, 0x7572, 0x656d, 0x746e, 0x6c61, 0x5020, 0x706f, "\000" 
+    IDC_GENRE, 0x403, 18, 0
+0x6e49, 0x7473, 0x7572, 0x656d, 0x746e, 0x6c61, 0x5220, 0x636f, 0x006b, 
+
+    IDC_GENRE, 0x403, 7, 0
+0x7445, 0x6e68, 0x6369, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x6f47, 0x6874, 0x6369, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x6144, 0x6b72, 0x6177, 0x6576, "\000" 
+    IDC_GENRE, 0x403, 18, 0
+0x6554, 0x6863, 0x6f6e, 0x492d, 0x646e, 0x7375, 0x7274, 0x6169, 0x006c, 
+
+    IDC_GENRE, 0x403, 11, 0
+0x6c45, 0x6365, 0x7274, 0x6e6f, 0x6369, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x6f50, 0x2d70, 0x6f46, 0x6b6c, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x7545, 0x6f72, 0x6164, 0x636e, 0x0065, 
+    IDC_GENRE, 0x403, 6, 0
+0x7244, 0x6165, 0x006d, 
+    IDC_GENRE, 0x403, 14, 0
+0x6f53, 0x7475, 0x6568, 0x6e72, 0x5220, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 7, 0
+0x6f43, 0x656d, 0x7964, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x7543, 0x746c, "\000" 
+    IDC_GENRE, 0x403, 12, 0
+0x6147, 0x676e, 0x7473, 0x2061, 0x6152, 0x0070, 
+    IDC_GENRE, 0x403, 7, 0
+0x6f54, 0x2070, 0x3034, "\000" 
+    IDC_GENRE, 0x403, 14, 0
+0x6843, 0x6972, 0x7473, 0x6169, 0x206e, 0x6152, 0x0070, 
+    IDC_GENRE, 0x403, 9, 0
+0x6f50, 0x2f70, 0x7550, 0x6b6e, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x754a, 0x676e, 0x656c, "\000" 
+    IDC_GENRE, 0x403, 16, 0
+0x614e, 0x6974, 0x6576, 0x4120, 0x656d, 0x6972, 0x6163, 0x006e, 
+    IDC_GENRE, 0x403, 8, 0
+0x6143, 0x6162, 0x6572, 0x0074, 
+    IDC_GENRE, 0x403, 9, 0
+0x654e, 0x2077, 0x6157, 0x6576, "\000" 
+    IDC_GENRE, 0x403, 12, 0
+0x6850, 0x6379, 0x6568, 0x6564, 0x696c, 0x0063, 
+    IDC_GENRE, 0x403, 5, 0
+0x6152, 0x6576, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x6853, 0x776f, 0x7574, 0x656e, 0x0073, 
+    IDC_GENRE, 0x403, 8, 0
+0x7254, 0x6961, 0x656c, 0x0072, 
+    IDC_GENRE, 0x403, 6, 0
+0x6f4c, 0x462d, 0x0069, 
+    IDC_GENRE, 0x403, 7, 0
+0x7254, 0x6269, 0x6c61, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x6341, 0x6469, 0x5020, 0x6e75, 0x006b, 
+    IDC_GENRE, 0x403, 10, 0
+0x6341, 0x6469, 0x4a20, 0x7a61, 0x007a, 
+    IDC_GENRE, 0x403, 6, 0
+0x6f50, 0x6b6c, 0x0061, 
+    IDC_GENRE, 0x403, 6, 0
+0x6552, 0x7274, 0x006f, 
+    IDC_GENRE, 0x403, 8, 0
+0x754d, 0x6973, 0x6163, 0x006c, 
+    IDC_GENRE, 0x403, 12, 0
+0x6f52, 0x6b63, 0x2620, 0x5220, 0x6c6f, 0x006c, 
+    IDC_GENRE, 0x403, 10, 0
+0x6148, 0x6472, 0x5220, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 5, 0
+0x6f46, 0x6b6c, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x6f46, 0x6b6c, 0x522f, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 14, 0
+0x614e, 0x6974, 0x6e6f, 0x6c61, 0x4620, 0x6c6f, 0x006b, 
+    IDC_GENRE, 0x403, 6, 0
+0x7753, 0x6e69, 0x0067, 
+    IDC_GENRE, 0x403, 12, 0
+0x6146, 0x7473, 0x462d, 0x7375, 0x6f69, 0x006e, 
+    IDC_GENRE, 0x403, 6, 0
+0x6542, 0x6f62, 0x0062, 
+    IDC_GENRE, 0x403, 6, 0
+0x614c, 0x6974, 0x006e, 
+    IDC_GENRE, 0x403, 8, 0
+0x6552, 0x6976, 0x6176, 0x006c, 
+    IDC_GENRE, 0x403, 7, 0
+0x6543, 0x746c, 0x6369, "\000" 
+    IDC_GENRE, 0x403, 11, 0
+0x6c42, 0x6575, 0x4720, 0x6172, 0x7373, "\000" 
+    IDC_GENRE, 0x403, 12, 0
+0x7641, 0x6e61, 0x6574, 0x6167, 0x6472, 0x0065, 
+    IDC_GENRE, 0x403, 12, 0
+0x6f47, 0x6874, 0x6369, 0x5220, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 17, 0
+0x7250, 0x676f, 0x6572, 0x7373, 0x7669, 0x2065, 0x6f52, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 17, 0
+0x7350, 0x6379, 0x6568, 0x6564, 0x696c, 0x2063, 0x6f52, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 15, 0
+0x7953, 0x706d, 0x6f68, 0x696e, 0x2063, 0x6f52, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x6c53, 0x776f, 0x5220, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 9, 0
+0x6942, 0x2067, 0x6142, 0x646e, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x6843, 0x726f, 0x7375, "\000" 
+    IDC_GENRE, 0x403, 15, 0
+0x6145, 0x7973, 0x4c20, 0x7369, 0x6574, 0x696e, 0x676e, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x6341, 0x756f, 0x7473, 0x6369, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x7548, 0x6f6d, 0x7275, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x7053, 0x6565, 0x6863, "\000" 
+    IDC_GENRE, 0x403, 8, 0
+0x6843, 0x6e61, 0x6f73, 0x006e, 
+    IDC_GENRE, 0x403, 6, 0
+0x704f, 0x7265, 0x0061, 
+    IDC_GENRE, 0x403, 14, 0
+0x6843, 0x6d61, 0x6562, 0x2072, 0x754d, 0x6973, 0x0063, 
+    IDC_GENRE, 0x403, 7, 0
+0x6f53, 0x616e, 0x6174, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x7953, 0x706d, 0x6f68, 0x796e, "\000" 
+    IDC_GENRE, 0x403, 11, 0
+0x6f42, 0x746f, 0x2079, 0x6142, 0x7373, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x7250, 0x6d69, 0x7375, "\000" 
+    IDC_GENRE, 0x403, 12, 0
+0x6f50, 0x6e72, 0x4720, 0x6f72, 0x766f, 0x0065, 
+    IDC_GENRE, 0x403, 7, 0
+0x6153, 0x6974, 0x6572, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x6c53, 0x776f, 0x4a20, 0x6d61, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x6c43, 0x6275, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x6154, 0x676e, 0x006f, 
+    IDC_GENRE, 0x403, 6, 0
+0x6153, 0x626d, 0x0061, 
+    IDC_GENRE, 0x403, 9, 0
+0x6f46, 0x6b6c, 0x6f6c, 0x6572, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x6142, 0x6c6c, 0x6461, "\000" 
+    IDC_GENRE, 0x403, 13, 0
+0x6f70, 0x6577, 0x2072, 0x6142, 0x6c6c, 0x6461, "\000" 
+    IDC_GENRE, 0x403, 14, 0
+0x6852, 0x7479, 0x6d68, 0x6369, 0x5320, 0x756f, 0x006c, 
+    IDC_GENRE, 0x403, 10, 0
+0x7246, 0x6565, 0x7473, 0x6c79, 0x0065, 
+    IDC_GENRE, 0x403, 5, 0
+0x7544, 0x7465, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x7550, 0x6b6e, 0x5220, 0x636f, 0x006b, 
+    IDC_GENRE, 0x403, 10, 0
+0x7244, 0x6d75, 0x5320, 0x6c6f, 0x006f, 
+    IDC_GENRE, 0x403, 10, 0
+0x2041, 0x6143, 0x6570, 0x6c6c, 0x0061, 
+    IDC_GENRE, 0x403, 11, 0
+0x7545, 0x6f72, 0x482d, 0x756f, 0x6573, "\000" 
+    IDC_GENRE, 0x403, 11, 0
+0x6144, 0x636e, 0x2065, 0x6148, 0x6c6c, "\000" 
+    IDC_GENRE, 0x403, 4, 0
+0x6f47, 0x0061, 
+    IDC_GENRE, 0x403, 12, 0
+0x7244, 0x6d75, 0x2620, 0x4220, 0x7361, 0x0073, 
+    IDC_GENRE, 0x403, 11, 0
+0x6c43, 0x6275, 0x482d, 0x756f, 0x6573, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x6148, 0x6472, 0x6f63, 0x6572, "\000" 
+    IDC_GENRE, 0x403, 7, 0
+0x6554, 0x7272, 0x726f, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x6e69, 0x6964, 0x0065, 
+    IDC_GENRE, 0x403, 9, 0
+0x7242, 0x7469, 0x5020, 0x706f, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x654e, 0x6567, 0x7072, 0x6e75, 0x006b, 
+    IDC_GENRE, 0x403, 11, 0
+0x6f50, 0x736c, 0x206b, 0x7550, 0x6b6e, "\000" 
+    IDC_GENRE, 0x403, 5, 0
+0x6542, 0x7461, "\000" 
+    IDC_GENRE, 0x403, 22, 0
+0x6843, 0x6972, 0x7473, 0x6169, 0x206e, 0x6147, 0x676e, 0x7473, 0x2061, 
+0x6152, 0x0070, 
+    IDC_GENRE, 0x403, 12, 0
+0x6548, 0x7661, 0x2079, 0x654d, 0x6174, 0x006c, 
+    IDC_GENRE, 0x403, 12, 0
+0x6c42, 0x6361, 0x206b, 0x654d, 0x6174, 0x006c, 
+    IDC_GENRE, 0x403, 10, 0
+0x7243, 0x736f, 0x6f73, 0x6576, 0x0072, 
+    IDC_GENRE, 0x403, 22, 0
+0x6f43, 0x746d, 0x7065, 0x726f, 0x7261, 0x2079, 0x6843, 0x6972, 0x7473, 
+0x6169, 0x006e, 
+    IDC_GENRE, 0x403, 15, 0
+0x6843, 0x6972, 0x7473, 0x6169, 0x206e, 0x6f52, 0x6b63, "\000" 
+    IDC_GENRE, 0x403, 9, 0
+0x654d, 0x6572, 0x676e, 0x6575, "\000" 
+    IDC_GENRE, 0x403, 6, 0
+0x6153, 0x736c, 0x0061, 
+    IDC_GENRE, 0x403, 12, 0
+0x7254, 0x7361, 0x2068, 0x654d, 0x6174, 0x006c, 
+    IDC_GENRE, 0x403, 6, 0
+0x6e41, 0x6d69, 0x0065, 
+    IDC_GENRE, 0x403, 5, 0
+0x504a, 0x706f, "\000" 
+    IDC_GENRE, 0x403, 10, 0
+0x7953, 0x746e, 0x2068, 0x6f50, 0x0070, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Large Icons",                 ID_VIEW_LARGEICONS
+        MENUITEM "List",                        ID_VIEW_LIST
+        MENUITEM "Details",                     ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        MENUITEM "Refresh\tF5",                 ID_VIEW_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "Always on top",               ID_VIEW_ALWAYSONTOP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Online",                     ID_HELP_ONLINE
+        MENUITEM SEPARATOR
+        MENUITEM "&Help...",                    ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Play",                        ID_EDIT_PLAY
+        MENUITEM SEPARATOR
+        MENUITEM "Copy",                        ID_EDIT_COPY
+        MENUITEM "Cut",                         ID_EDIT_CUT
+        MENUITEM "Paste",                       ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Remove ID3 Tag",              ID_EDIT_REMOVEID3TAG
+        MENUITEM "Clear ID3 Tag",               ID_EDIT_CLEARID3TAG
+    END
+    POPUP "PasteMenu"
+    BEGIN
+        MENUITEM "Paste",                       ID_EDIT_PASTE
+    END
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Mp3FileStudio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Gp3 Setup Spliter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x41d /fo"Debug/Gp3 Setup Spliter.res" /d "_DEBUG" "C:\My Documents\Mina Program\C++\Gp3 Setup Spliter\Gp3 Setup Spliter.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP112.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Gp3 Setup Spliter.pdb" /debug /machine:I386 /out:"Debug/Gp3 Setup Spliter.exe" /pdbtype:sept 
+".\Debug\Front.obj"
+".\Debug\Gp3 Setup Spliter.obj"
+".\Debug\Gp3 Setup SpliterDlg.obj"
+".\Debug\GpXFileInfo.obj"
+".\Debug\Misc.obj"
+".\Debug\Rear.obj"
+".\Debug\SetupFile.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Gp3 Setup Spliter.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP112.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Gp3 Setup Spliter.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

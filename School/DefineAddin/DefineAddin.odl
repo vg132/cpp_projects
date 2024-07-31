@@ -1,0 +1,57 @@
+// DefineAddin.odl : type library source for DefineAddin.dll
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (DefineAddin.tlb).
+
+[	uuid(58DA71C8-6682-4E74-88E1-D6EE6D1E5587), version(1.0),
+	helpstring ("DEFINEADDIN Developer Studio Add-in") ]
+library DefineAddin
+{
+	importlib("stdole32.tlb");
+	importlib("devshl.dll");
+	importlib("ide\devdbg.pkg");
+	
+
+	//  Dual interface for CCommands
+	//
+	//  All commands that your add-in adds to DevStudio
+	//   must appear in this interface.  You may use the
+	//   ClassView to add methods to this interface, which
+	//   will cause stub implementations of those methods to
+	//   appear in your CCommands class.
+	
+	[	uuid(369FB63B-371A-4E1E-94BA-351493555CC9),
+		oleautomation,
+		dual
+	]
+
+	interface ICommands : IDispatch
+	{
+		// methods
+		[id(1)]
+		HRESULT DefineAddinCommandMethod();
+	};
+
+	//  Class information for CCommands
+
+	[ uuid(AD63F820-36C0-4BA1-B2C3-4AC8EEC6B327) ]
+	coclass Commands
+	{
+		[default] interface ICommands;
+	};
+
+	[ hidden, uuid(EC9E2D7E-5FE9-4AA8-898A-535B3C2A7627) ]
+	coclass ApplicationEvents
+	{
+		[default] interface IApplicationEvents;
+	}
+
+	[ hidden, uuid(2DBDA754-58D7-4108-B00A-7EA61BC47C18) ]
+	coclass DebuggerEvents
+	{
+		[default] interface IDebuggerEvents;
+	}
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Mp3FileStudio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x41d /fo"Release/Mp3FileStudio.res" /d "NDEBUG" "C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\Mp3FileStudio.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Mp3FileStudio.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\AutoFileName.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\AutoTagEdit.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\FileComboBox.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\FileList.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\FileListView.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\FileOrginizer.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\LogTrace.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\Mp3FileInfo.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\Mp3FileStudio.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\Mp3FileStudioDlg.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\Progress.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\RegEdit.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\Settings.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\SystemImageList.cpp"
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\TagEdit.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Mp3FileStudio.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\My Programs\C++\Övriga\Mp3FileStudio\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Mp3FileStudio.pdb" /machine:I386 /out:"Release/Mp3FileStudio.exe" 
+".\Release\AutoFileName.obj"
+".\Release\AutoTagEdit.obj"
+".\Release\FileComboBox.obj"
+".\Release\FileList.obj"
+".\Release\FileListView.obj"
+".\Release\FileOrginizer.obj"
+".\Release\LogTrace.obj"
+".\Release\Mp3FileInfo.obj"
+".\Release\Mp3FileStudio.obj"
+".\Release\Mp3FileStudioDlg.obj"
+".\Release\Progress.obj"
+".\Release\RegEdit.obj"
+".\Release\Settings.obj"
+".\Release\StdAfx.obj"
+".\Release\SystemImageList.obj"
+".\Release\TagEdit.obj"
+".\Release\Mp3FileStudio.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AutoFileName.cpp
+AutoTagEdit.cpp
+FileComboBox.cpp
+FileList.cpp
+FileListView.cpp
+FileOrginizer.cpp
+LogTrace.cpp
+Mp3FileInfo.cpp
+Mp3FileStudio.cpp
+Mp3FileStudioDlg.cpp
+Progress.cpp
+RegEdit.cpp
+Settings.cpp
+SystemImageList.cpp
+TagEdit.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Mp3FileStudio.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,345 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ExitWizard DIALOG DISCARDABLE  0, 0, 199, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About New Track Install"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Resume Setup Wizard",IDC_Resume,7,46,83,16
+    PUSHBUTTON      "E&xit Setup Wizard",IDC_Exit,109,46,83,16
+    LTEXT           "Are you sure you want to Exit?",IDC_STATIC,52,15,99,11
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+END
+
+IDD_NEWTRACKINSTALL_DIALOG DIALOGEX 0, 0, 195, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gp2 Track Setup Wizard"
+MENU IDR_TrackSetupMenu
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Next >",IDC_Next,138,164,50,14
+    PUSHBUTTON      "< &Back",IDC_Back,88,164,50,14
+    PUSHBUTTON      "&Cancel",IDC_Cancel,7,164,50,14
+    CONTROL         "",IDC_Split,"Static",SS_BLACKFRAME | SS_SUNKEN,7,158,
+                    181,1,WS_EX_CLIENTEDGE
+    ICON            IDR_MAINFRAME,IDC_InstallLogo,7,7,20,20,NOT WS_VISIBLE
+    EDITTEXT        IDC_WelcomeText,43,7,145,77,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER
+    GROUPBOX        "Setup file location",IDC_SetupFrame,7,94,181,28,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Gp2 Directory",IDC_Gp2DirFrame,7,126,181,28,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_Gp2Dir,13,138,130,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER
+    PUSHBUTTON      "&Browse...",IDC_Gp2DirBrowse,146,135,37,15,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_SetupFile,13,106,130,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER
+    PUSHBUTTON      "&Browse...",IDC_SetupBrowse,145,103,37,15,NOT 
+                    WS_VISIBLE
+    CONTROL         "List1",IDC_TrackFile2,"SysListView32",LVS_SMALLICON | 
+                    LVS_SORTASCENDING | LVS_AUTOARRANGE | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,7,7,181,45,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Remove Track",IDC_RemoveTrack2,120,54,67,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "&Add Track",IDC_AddTrack,7,54,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Remove Gp2form",IDC_RemoveGp2Form,121,142,67,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Add Gp2Form",IDC_AddGp2Form,7,142,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_Gp2form,7,71,181,68,ES_MULTILINE | ES_READONLY | NOT 
+                    WS_VISIBLE | NOT WS_BORDER | WS_VSCROLL,WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_JamFiles,"SysListView32",LVS_SMALLICON | 
+                    LVS_SORTASCENDING | LVS_AUTOARRANGE | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,7,7,181,129,WS_EX_ACCEPTFILES | 
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add Jam...",IDC_AddJam,7,140,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Remove Jam",IDC_RemoveJam,87,140,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Remove All",IDC_RemoveAll,138,140,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_Summary,7,7,181,146,ES_MULTILINE | ES_READONLY | NOT 
+                    WS_VISIBLE | NOT WS_BORDER | WS_VSCROLL
+END
+
+IDD_About DIALOG DISCARDABLE  0, 0, 196, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Gp2 Track Setup Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&OK",IDC_Ok,139,77,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "Gp2 Track Setup Wizard v1.0",IDC_STATIC,49,7,140,8
+    LTEXT           "Developer: Viktor Gars\nhttp://hem1.passagen.se/formula1/\nCopyright © 2000 Viktor Gars",
+                    IDC_STATIC,49,20,140,26
+    LTEXT           "Other contributors:\nMal Ross for Jam2Jad source.\nhttp://www.grandprix2.com/opensrc/",
+                    IDC_STATIC,49,49,140,26
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Gp2 Track Setup builder\0"
+            VALUE "CompanyName", "VG Software\0"
+            VALUE "FileDescription", "Gp2 Track Setup Wizard\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "Gp2 Track Setup Wizard\0"
+            VALUE "LegalCopyright", "Copyright © 2000 Viktor Gars\0"
+            VALUE "LegalTrademarks", "Gp2 Track Setup Wizard\0"
+            VALUE "OriginalFilename", "Gp2 Track Setup Wizard.exe\0"
+            VALUE "PrivateBuild", "1.0\0"
+            VALUE "ProductName", "Gp2 Track Setup Wizard\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", "2478\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ExitWizard, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_NEWTRACKINSTALL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_About, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\New Track Install.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\New Track Install.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TrackInfo DIALOG DISCARDABLE  0, 0, 154, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Track Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_Name,66,7,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Country,66,20,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Adjective,66,33,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Laps,66,46,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Len,66,59,81,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDC_Resume,97,79,50,14
+    PUSHBUTTON      "&Cancel",IDC_Exit,7,79,50,14
+    LTEXT           "Track Name:",IDC_STATIC,7,9,55,8
+    LTEXT           "Track Country",IDC_STATIC,7,22,55,8
+    LTEXT           "Track Adjective:",IDC_STATIC,7,35,55,8
+    LTEXT           "Laps:",IDC_STATIC,7,48,55,8
+    LTEXT           "Track Length (m):",IDC_STATIC,7,61,57,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TrackInfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrackSetupMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_Welcome             "Welcome to Gp2 Track Setup Wizard\r\n\r\nThis program will create a setup file for your Gp2 track.\r\n\r\nPlease select the name and location of your setup file and select your Gp2 directory."
+    IDS_Summary             "Here is a summary of what you have added to this setup project. If everything is correct click ""Finish!"" to create the setup file, if you want to change something click ""Back"".\r\n"
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\New Track Install.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

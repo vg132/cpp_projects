@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vwf", "framework\vwf.vcproj", "{C27F764D-10F3-46E0-B198-3B02186E9557}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowtest", "testapp\windowtest.vcproj", "{06421250-86A1-4327-9C9B-61B122C567DC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C27F764D-10F3-46E0-B198-3B02186E9557}.Debug.ActiveCfg = Debug|Win32
+		{C27F764D-10F3-46E0-B198-3B02186E9557}.Debug.Build.0 = Debug|Win32
+		{C27F764D-10F3-46E0-B198-3B02186E9557}.Release.ActiveCfg = Release|Win32
+		{C27F764D-10F3-46E0-B198-3B02186E9557}.Release.Build.0 = Release|Win32
+		{06421250-86A1-4327-9C9B-61B122C567DC}.Debug.ActiveCfg = Debug|Win32
+		{06421250-86A1-4327-9C9B-61B122C567DC}.Debug.Build.0 = Debug|Win32
+		{06421250-86A1-4327-9C9B-61B122C567DC}.Release.ActiveCfg = Release|Win32
+		{06421250-86A1-4327-9C9B-61B122C567DC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		Makefile = Makefile
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

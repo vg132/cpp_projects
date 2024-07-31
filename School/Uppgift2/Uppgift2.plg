@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Uppgift2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP144.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Uppgift2.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\CPP\Uppgift2\ViperString.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP144.tmp" 
+Creating temporary file "C:\TEMP\RSP145.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Uppgift2.pdb" /debug /machine:I386 /out:"Debug/Uppgift2.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\Uppgift2.obj
+.\Debug\Uppgift2Dlg.obj
+.\Debug\ViperString.obj
+.\Debug\ViperStringBase.obj
+.\Debug\Uppgift2.res
+]
+Creating command line "link.exe @C:\TEMP\RSP145.tmp"
+<h3>Output Window</h3>
+Compiling...
+ViperString.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Uppgift2.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

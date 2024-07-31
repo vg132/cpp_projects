@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SplitFile - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x41d /fo"Release/SplitFile.res" /d "NDEBUG" /d "_AFXDLL" "C:\My Documents\Mina Program\C++\SplitFile\SplitFile.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP111.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SplitFile.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\Mina Program\C++\SplitFile\SplitFile.cpp"
+"C:\My Documents\Mina Program\C++\SplitFile\SplitFileDlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP111.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP112.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SplitFile.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\Mina Program\C++\SplitFile\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP112.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/SplitFile.pdb" /machine:I386 /out:"Release/SplitFile.exe"  ".\Release\SplitFile.obj" ".\Release\SplitFileDlg.obj" ".\Release\StdAfx.obj" ".\Release\SplitFile.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+SplitFile.cpp
+SplitFileDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SplitFile.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

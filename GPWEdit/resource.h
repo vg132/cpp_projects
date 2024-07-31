@@ -1,0 +1,120 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Grand Prix World.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_GRANDPRIXWORLD_DIALOG       102
+#define IDR_MAINFRAME                   128
+#define IDR_MENU1                       129
+#define IDD_Team                        144
+#define IDD_Driver                      145
+#define IDD_Root                        146
+#define IDD_Commercial                  147
+#define IDD_Other                       160
+#define IDD_OTHERROOT                   164
+#define IDC_TreeView                    1007
+#define IDC_DRIVER_OVERTAKING           1031
+#define IDC_DRIVER_EXPERIENCE           1032
+#define IDC_DRIVER_RACEBONUS            1033
+#define IDC_DRIVER_SPEED                1034
+#define IDC_DRIVER_CHBONUS              1035
+#define IDC_DRIVER_SALARY               1036
+#define IDC_DRIVER_SKILL                1037
+#define IDC_DRIVER_WETWETHER            1038
+#define IDC_DRIVER_STAMINA              1039
+#define IDC_DRIVER_CONCENTRATION        1040
+#define IDC_DRIVER_MORALE               1041
+#define IDC_FRAME                       1042
+#define IDC_DRIVER_STATIC_SALARY        1043
+#define IDC_DRIVER_STATIC_RACEBONUS     1044
+#define IDC_DRIVER_STATIC_WCBONUS       1045
+#define IDC_DRIVER_STATIC_SPEED         1046
+#define IDC_DRIVER_STATIC_SKILL         1047
+#define IDC_DRIVER_STATIC_OVERTAKING    1048
+#define IDC_DRIVER_STATIC_WETWETHER     1049
+#define IDC_DRIVER_STATIC_CONCENTRATION 1050
+#define IDC_DRIVER_STATIC_EXPERIENCE    1051
+#define IDC_DRIVER_STATIC_STAMINA       1052
+#define IDC_TEAM_BUDGET                 1054
+#define IDC_TEAM_STATIC_BUDGET          1055
+#define IDC_COMMERCIAL_STATIC_SALARY    1056
+#define IDC_COMMERCIAL_SALARY           1057
+#define IDC_COMMERCIAL_STATIC_ROYALTY   1058
+#define IDC_COMMERCIAL_ROYALTY          1059
+#define IDC_COMMERCIAL_STATIC_ABILITY   1060
+#define IDC_COMMERCIAL_ABILITY          1061
+#define IDC_OTHER_STATIC_ABILITY        1062
+#define IDC_OTHER_ABILITY               1063
+#define IDC_OTHER_STATIC_WCBONUS        1064
+#define IDC_OTHER_STATIC_RACEBONUS      1065
+#define IDC_OTHER_STATIC_SALARY         1066
+#define IDC_OTHER_SALARY                1067
+#define IDC_OTHER_RACEBONUS             1068
+#define IDC_OTHER_CHBONUS               1069
+#define IDC_TEAM_STATIC_TESTPRICE       1070
+#define IDC_TEAM_TESTPRICE              1071
+#define IDC_ROOT_STATIC_PLAYER          1076
+#define IDC_ROOT_STATIC_TEAM            1077
+#define IDC_ROOT_STATIC_CREATED         1078
+#define IDC_ROOT_STATIC_MODIFIED        1079
+#define IDC_ROOT_STATIC_SCORE           1080
+#define IDC_ROOT_STATIC_YEARS           1081
+#define IDC_ROOT_STATIC_YEAR            1082
+#define IDC_ROOT_STATIC_POS             1083
+#define IDC_ROOT_STATIC_POINTS          1084
+#define IDC_ROOT_STATIC_NEXTRACE        1085
+#define IDC_ROOT_PLAYER                 1086
+#define IDC_ROOT_TEAM                   1087
+#define IDC_ROOT_NEXTRACE               1088
+#define IDC_ROOT_POINTS                 1089
+#define IDC_ROOT_POS                    1090
+#define IDC_ROOT_YEAR                   1091
+#define IDC_ROOT_YEARS                  1092
+#define IDC_ROOT_SCORE                  1093
+#define IDC_ROOT_MODIFIED               1094
+#define IDC_ROOT_CREATED                1095
+#define IDC_COMMERCIAL_STATIC_LASTYEAR  1096
+#define IDC_COMMERCIAL_LASTYEAR         1097
+#define IDC_OTHER_STATIC_LASTYEAR       1098
+#define IDC_OTHER_LASTYEAR              1099
+#define IDC_DRIVER_POINTS               1100
+#define IDC_DRIVER_STATIC_POINTS        1101
+#define IDC_DRIVER_STATIC_MORALE        1102
+#define IDC_TEAM_STATIC_POINTS          1103
+#define IDC_TEAM_POINTS                 1104
+#define IDC_OTHERROOT_STATIC_EXCELLENT  1135
+#define IDC_OTHERROOT_STATIC_VERYGOOD   1136
+#define IDC_OTHERROOT_STATIC_GOOD       1137
+#define IDC_OTHERROOT_STATIC_AVERAGE    1138
+#define IDC_OTHERROOT_STATIC_TRAINEE    1139
+#define IDC_OTHERROOT_TRAINEE           1140
+#define IDC_OTHERROOT_AVERAGE           1141
+#define IDC_OTHERROOT_GOOD              1142
+#define IDC_OTHERROOT_VERYGOOD          1143
+#define IDC_OTHERROOT_EXCELLENT         1144
+#define IDC_OTHERROOT_STATIC_MORALE     1145
+#define IDC_OTHERROOT_MORALE            1146
+#define IDC_BUTTON1                     1153
+#define ID_FILE_EXIT                    32771
+#define ID_HELP_ABOUT                   32772
+#define IDC_FILE_SAVEAS                 32773
+#define IDC_HELP_ONLINE                 32774
+#define IDC_EDIT_GPWPath                32776
+#define IDC_FILE_EXPORT                 32782
+#define IDC_FILE_IMPORT                 32783
+#define IDC_FILE_CLOSE                  32786
+#define IDC_HELP_HOWTO                  32787
+#define IDC_HELP_MENUHELP               32788
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        171
+#define _APS_NEXT_COMMAND_VALUE         32789
+#define _APS_NEXT_CONTROL_VALUE         1178
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

@@ -1,0 +1,381 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Gp3 Track Installer Version 0.95 BETA"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,14,21,20
+    LTEXT           "Gp3 Track Installer\nVersion 0.95 BETA",IDC_STATIC,40,
+                    10,119,15,SS_NOPREFIX
+    LTEXT           "Developer: Viktor Gars\nhttp://www.vgsoftware.com/\nCopyright © 2001 Viktor Gars",
+                    IDC_STATIC,40,31,96,26
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "This Tool is provided ""as is"" without warranty of any kind, either expressed or implied. The author will not be held responsible for any losses incurred, either directly or indirectly by the use of this Tool.",
+                    IDC_STATIC,13,100,213,27
+    GROUPBOX        "Disclaimer",IDC_STATIC,7,90,221,41
+    GROUPBOX        "Credits",IDC_STATIC,7,61,221,25
+    LTEXT           "Static",IDC_STATIC_CREDITS,13,71,209,8
+END
+
+IDD_GP3TRACKINSTALLER_DIALOG DIALOGEX 0, 0, 397, 162
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gp3 Track Installer - v1.0"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "GP3_SETTINGS_FRAME",IDC_STATIC_SETTINGS,7,35,187,120
+    EDITTEXT        IDC_EDIT_GP3PATH,13,55,144,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "GP3_PATH",IDC_STATIC_GP3,13,47,143,8
+    EDITTEXT        IDC_EDIT_GP32KPATH,14,79,144,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "GP3_2000_PATH",IDC_STATIC_GP32K,13,70,144,8
+    PUSHBUTTON      "...",IDC_BUTTON_GP3_BROWSE,159,55,15,12
+    PUSHBUTTON      "...",IDC_BUTTON_GP32K_BROWSE,159,79,15,12
+    PUSHBUTTON      "GP3_INSTALL_BUTTON",IDC_BUTTON_INSTALL_GP3,18,132,50,14
+    PUSHBUTTON      "GP3_2000_INSTALL_BUTTON",IDC_BUTTON_INSTALL_GP32K,73,
+                    132,50,14
+    PUSHBUTTON      "BOTH_INSTALL_BUTTON",IDC_BUTTON_INSTALL_BOTH,128,132,50,
+                    14
+    GROUPBOX        "INSTALL_FRAME",IDC_STATIC_INSTALL,7,121,187,34
+    EDITTEXT        IDC_EDIT_GP3TRACKDIR,14,103,144,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "GP3_TRACK_DIR",IDC_STATIC_TRACKDIR,13,95,144,8,
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BUTTON_TRACKDIR_BROWSE,159,103,15,12,
+                    WS_DISABLED
+    CONTROL         "Check1",IDC_CHECK_TRACKDIR_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,104,9,10
+    DEFPUSHBUTTON   "Button1",IDC_BUTTON1,383,7,7,6,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,0,397,1
+    GROUPBOX        "TRACK_FILE_FRAME",IDC_STATIC_TRACKFRAME,7,7,383,148
+    LTEXT           "",IDC_STATIC_TRACK_FILE,13,20,371,8
+    GROUPBOX        "GP3INFO_FRAME_TITLE",IDC_STATIC_TRACK_INFO,193,35,197,
+                    120
+    LTEXT           "GP3INFO_COUNTRY",IDC_STATIC_LABEL_COUNTRY,200,55,79,8
+    LTEXT           "GP3INFO_LENGTH",IDC_STATIC_LABEL_LENGTH,200,65,79,8
+    LTEXT           "GP3INFO_NAME",IDC_STATIC_LABEL_NAME,200,45,79,8
+    LTEXT           "GP3INFO_LAPS",IDC_STATIC_LABEL_LAPS,200,75,79,8
+    LTEXT           "GP3INFO_YEAR",IDC_STATIC_LABEL_YEAR,200,85,79,8
+    LTEXT           "GP3INFO_DESC",IDC_STATIC_LABEL_DESC,200,125,79,8
+    LTEXT           "GP3INFO_SLOT",IDC_STATIC_LABEL_SLOT,200,95,79,8
+    LTEXT           "GP3INFO_AUTHOR",IDC_STATIC_LABEL_AUTHOR,200,115,79,8
+    LTEXT           "GP3INFO_EVENT",IDC_STATIC_LABEL_EVENT,200,105,79,8
+    LTEXT           "",IDC_STATIC_LENGHT,280,65,104,8
+    LTEXT           "",IDC_STATIC_LAPS,280,75,104,8
+    LTEXT           "",IDC_STATIC_EVENT,280,105,104,8
+    LTEXT           "",IDC_STATIC_YEAR,280,85,104,8
+    LTEXT           "",IDC_STATIC_SLOT,280,95,104,8
+    LTEXT           "",IDC_STATIC_AUTHOR,280,115,104,8
+    LTEXT           "",IDC_STATIC_DESC,280,125,104,24
+    LTEXT           "",IDC_STATIC_NAME,280,45,104,8
+    LTEXT           "",IDC_STATIC_COUNTRY,280,55,104,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "VG Software\0"
+            VALUE "FileDescription", "Gp3 Track Installer\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "Gp3 Track Installer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gp3 Track Installer.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Gp3 Track Installer\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_GP3TRACKINSTALLER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PROGRESS DIALOG DISCARDABLE  0, 0, 198, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gp3 Track Installer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS_BAR,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,7,49,184,14
+    LTEXT           "Static",IDC_STATIC_TITLE,7,7,184,8
+    LTEXT           "Static",IDC_STATIC_SUB_TITLE,7,24,184,8
+    LTEXT           "Static",IDC_STATIC_DATA,7,35,184,8
+END
+
+IDD_DIALOG_OPTIONS DIALOG DISCARDABLE  0, 0, 211, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OPTIONS_CAPTION"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,154,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,153,50,14
+    CONTROL         "ALWAYS_OVERWRITE",IDC_CHECK_OVERWRITE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,80,184,10
+    CONTROL         "SHOW_REPORT",IDC_CHECK_STATUS_REPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,90,184,10
+    GROUPBOX        "ZIP_SETTINGS_FRAME",IDC_STATIC_ZIP_SETTINGS,7,7,197,65
+    EDITTEXT        IDC_EDIT_UNZIP_PATH,13,39,168,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED
+    PUSHBUTTON      "...",IDC_BUTTON_UNZIP_BROWSE,183,39,15,12
+    LTEXT           "EXTRACT_TO",IDC_STATIC_EXTRACT_TO,13,31,64,8
+    CONTROL         "REMOVE_FILES",IDC_CHECK_REMOVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,55,184,8
+    CONTROL         "EXTRACT_TO_TEMP",IDC_CHECK_TEMP_FOLDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,18,184,10
+    CONTROL         "SHOW_GP3FORM",IDC_CHECK_SHOW_GP3FORM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,100,184,10
+    GROUPBOX        "MISC_SETTINGS_FRAME",IDC_STATIC_MISC_SETTINGS,7,67,197,
+                    83
+    COMBOBOX        IDC_COMBO_LANGUAGE,14,120,184,153,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "SELECT_LANGUAGE",IDC_STATIC_LANGUAGE,14,111,184,8
+END
+
+IDD_DIALOG_REPORT DIALOG DISCARDABLE  0, 0, 368, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "REPORT_TITLE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_REPORT,7,7,354,217,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    PUSHBUTTON      "REPORT_OK_BUTTON",IDC_BUTTON_OK,311,229,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DIALOG_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gp3TrackInstaller.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Gp3TrackInstaller.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "FILE_MENU"
+    BEGIN
+        MENUITEM "FILE_OPEN",                   ID_FILE_OPEN
+        MENUITEM "FILE_CLOSE",                  ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "FILE_SETTINGS",               ID_FILE_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "FILE_EXIT",                   ID_FILE_EXIT
+    END
+    POPUP "HELP_MENU"
+    BEGIN
+        MENUITEM "HELP_ONLINE",                 ID_HELP_ONLINE
+        MENUITEM SEPARATOR
+        MENUITEM "HELP_HELP",                   ID_HELP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "HELP_ABOUT",                  ID_HELP_ABOUT
+    END
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Gp3TrackInstaller.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

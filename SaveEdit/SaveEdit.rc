@@ -1,0 +1,1882 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SaveEdit.ico"
+IDR_SAVEEDTYPE          ICON    DISCARDABLE     "res\\SaveEditDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVEFILE
+    SEPARATOR
+    BUTTON      ID_EDIT_RUNGPW
+    SEPARATOR
+    BUTTON      ID_APP_HELP
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Close",                       ID_FILE_CLOSEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVEFILE
+        MENUITEM "Save &As...",                 ID_FILE_SAVEFILEAS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&GPW Directory",              ID_EDIT_GPWDIRECTORY
+        MENUITEM "Save File Directory...",      ID_EDIT_SAVEFILEDIRECTORY
+        MENUITEM SEPARATOR
+        MENUITEM "&Run GPW...",                 ID_EDIT_RUNGPW
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SaveEdit...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVEFILE,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GPW Save File Editor v1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_SAVEEDTYPE,IDC_STATIC,10,14,20,20,SS_SUNKEN
+    LTEXT           "GPW Save File Editor v1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Developer: Viktor Gars\nhttp://www.vgsoftware.com/\nCopyright © 2000 Viktor Gars",
+                    IDC_STATIC,41,25,96,26
+    DEFPUSHBUTTON   "OK",IDC_OK,178,7,50,14,WS_GROUP
+    LTEXT           "Disclaimer: This Tool is provided ""as is"" without warranty of any kind, either expressed or implied. The author will not be held responsible for any losses incurred, either directly or indirectly by the use of this Tool.",
+                    IDC_STATIC,7,70,221,27
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,66,
+                    221,1
+END
+
+IDD_SAVEEDIT_FORM DIALOGEX 0, 0, 135, 218
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_NAV_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_DISABLED | WS_BORDER | WS_TABSTOP,0,0,135,218,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SaveEdit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SaveEdit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SaveEdit.EXE\0"
+            VALUE "ProductName", "SaveEdit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SaveEdit\n\nSaveEd\n\n\nSaveEdit.Document\nSaveEd Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "GPW Save File Editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE           "Close the active file\nClose"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_GPWDIRECTORY    "Set your GPW directory"
+    ID_EDIT_RUNGPW          "Run GPW\nRun GPW"
+    ID_APP_HELP             "Help\nHelp"
+    ID_FILE_SAVEFILE        "Save the active file\nSave"
+    ID_FILE_SAVEFILEAS      "Save the active file with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TEXT                 "GPW Save File Editor v1.0 © Viktor Gars 2000 -[http://www.vgsoftware.com/]-"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SaveEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CLOSED              ICON    DISCARDABLE     "res\\closed.ico"
+IDI_OPEN                ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_TRACK               ICON    DISCARDABLE     "res\\track.ico"
+IDI_DRIVER              ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_MECHANICS           ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_COMMERCIAL          ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_DESIGN              ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_ENGINEERING         ICON    DISCARDABLE     "res\\Gp2setup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAN_DRIVER DIALOG DISCARDABLE  0, 0, 278, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Contract",IDC_STATIC,7,7,118,54
+    LTEXT           "Salary:",IDC_STATIC,13,19,22,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_SALARY,69,17,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_SALARY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,31,11,
+                    14
+    LTEXT           "Race Bonus:",IDC_STATIC,13,32,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_RACEBONUS,69,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_RACEBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,46,11,
+                    14
+    LTEXT           "CH Bonus:",IDC_STATIC,13,45,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_CHBONUS,69,43,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_CHBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,61,11,
+                    14
+    GROUPBOX        "Career",IDC_STATIC,7,65,118,133
+    LTEXT           "Age:",IDC_STATIC,13,77,16,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_AGE,69,75,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_AGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,47,11,
+                    14
+    LTEXT           "Nationality:",IDC_STATIC,13,90,36,8,NOT WS_GROUP
+    COMBOBOX        IDC_DRIVER_COMBO_COUNTRY,69,88,48,103,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Championships:",IDC_STATIC,13,103,50,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_CH,69,101,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_CH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,63,11,
+                    14
+    LTEXT           "Races:",IDC_STATIC,13,116,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_RACES,69,114,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_RACES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,79,11,
+                    14
+    LTEXT           "Wins:",IDC_STATIC,13,129,19,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_WINS,69,127,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_WINS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,95,11,
+                    14
+    LTEXT           "Points:",IDC_STATIC,13,143,22,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_TOTALPOINTS,69,140,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_TOTALPOINTS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,111,
+                    11,14
+    LTEXT           "Fastest Laps:",IDC_STATIC,13,155,43,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_FASTLAPS,69,153,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_FASTLAPS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,127,
+                    11,14
+    LTEXT           "Points Finishes:",IDC_STATIC,13,168,50,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_POINTFINISH,69,167,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_POINTFINISH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,143,
+                    11,14
+    LTEXT           "Pole Positions:",IDC_STATIC,13,181,47,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_POLE,69,179,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_POLE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,159,
+                    11,14
+    GROUPBOX        "Ability",IDC_STATIC,130,7,118,121
+    LTEXT           "Speed:",IDC_STATIC,136,20,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_SPEED,192,18,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_SPEED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,91,11,
+                    14
+    LTEXT           "Skill:",IDC_STATIC,136,33,16,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_SKILL,192,31,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_SKILL,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,106,
+                    11,14
+    LTEXT           "Overtaking:",IDC_STATIC,136,46,38,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_OVERTAKING,192,44,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_OVERTAKING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,121,
+                    11,14
+    LTEXT           "Wet Weather:",IDC_STATIC,136,59,46,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_WET,192,57,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_WET,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,136,
+                    11,14
+    LTEXT           "Concentration:",IDC_STATIC,136,72,47,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_CONCENTRATION,192,70,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_CONCENTRATION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,151,
+                    11,14
+    LTEXT           "Experience:",IDC_STATIC,136,85,38,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_EXPERIENCE,192,83,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_EXPERIENCE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,166,
+                    11,14
+    LTEXT           "Stamina:",IDC_STATIC,136,98,28,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_STAMINA,192,96,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_STAMINA,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,247,181,
+                    11,14
+    LTEXT           "Morale:",IDC_STATIC,136,111,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_MORALE,192,109,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_MORALE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,31,11,
+                    14
+    GROUPBOX        "Other",IDC_STATIC,130,130,118,68
+    LTEXT           "Points:",IDC_STATIC,138,142,22,8,NOT WS_GROUP
+    EDITTEXT        IDC_DRIVER_EDIT_POINTS,192,140,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin4",IDC_DRIVER_SPIN_POINTS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,260,175,
+                    11,14
+    LTEXT           "Team:",IDC_STATIC,138,155,21,8,NOT WS_GROUP
+    COMBOBOX        IDC_DRIVER_COMBO_TEAM,192,153,48,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Driver Role:",IDC_STATIC,138,168,38,8
+    COMBOBOX        IDC_DRIVER_COMBO_ROLE,192,166,48,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Driver Pos:",IDC_STATIC,138,181,36,8
+    COMBOBOX        IDC_DRIVER_COMBO_POS,192,179,48,63,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TEAMFINANCE DIALOG DISCARDABLE  0, 0, 165, 151
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Team Settings",IDC_STATIC,7,7,118,30
+    LTEXT           "Balance:",IDC_STATIC,13,19,29,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_BALANCE,66,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_BALANCE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,132,7,11,
+                    14
+    GROUPBOX        "Facilities",IDC_STATIC,7,39,118,105
+    LTEXT           "Factory:",IDC_STATIC,13,51,26,8
+    EDITTEXT        IDC_EDIT_FACTORY,66,49,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_FACTORY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,132,25,11,
+                    14
+    LTEXT           "Cad:",IDC_STATIC,13,64,16,8
+    EDITTEXT        IDC_EDIT_CAD,66,62,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_CAD,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,132,42,11,14
+    LTEXT           "Cam:",IDC_STATIC,13,77,17,8
+    EDITTEXT        IDC_EDIT_CAM,66,75,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_CAM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,133,63,11,14
+    LTEXT           "Supercomputer:",IDC_STATIC,13,90,51,8
+    EDITTEXT        IDC_EDIT_SUPERCOMPUTER,66,88,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_SUPERCOMPUTER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,147,7,11,
+                    14
+    LTEXT           "Test Rig:",IDC_STATIC,13,103,30,8
+    EDITTEXT        IDC_EDIT_TESTRIG,66,101,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_TESTRIG,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,147,25,11,
+                    14
+    LTEXT           "Wind Tunnel",IDC_STATIC,13,116,42,8
+    EDITTEXT        IDC_EDIT_WINDTUNNEL,66,114,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_WINDTUNNEL,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,147,42,11,
+                    14
+    LTEXT           "Workshop:",IDC_STATIC,13,129,36,8
+    EDITTEXT        IDC_EDIT_WORKSHOP,66,127,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_WORKSHOP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,147,63,11,
+                    14
+END
+
+IDD_WORK_ENGINEER DIALOG DISCARDABLE  0, 0, 304, 190
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Part Costs",IDC_STATIC,7,7,155,92
+    LTEXT           "Build This Years Car",IDC_STATIC,13,19,64,8
+    EDITTEXT        IDC_THISCAR,108,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_THISCAR,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,171,18,8,
+                    10
+    LTEXT           "Build Next Years Car:",IDC_STATIC,13,32,68,8
+    EDITTEXT        IDC_NEXTCAR,108,30,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_NEXTCAR,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,171,31,8,
+                    10
+    LTEXT           "Upgrade Chassis:",IDC_STATIC,13,45,56,8
+    EDITTEXT        IDC_CHASSIS,108,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_CHASSIS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,171,44,8,
+                    10
+    LTEXT           "Upgrade Technology:",IDC_STATIC,13,58,70,8
+    EDITTEXT        IDC_TECH,108,56,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_TECH,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,171,57,8,10
+    LTEXT           "Upgrade Driving Aids:",IDC_STATIC,13,71,70,8
+    EDITTEXT        IDC_AIDS,108,69,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_AIDS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,171,70,8,10
+    LTEXT           "Build Spares:",IDC_STATIC,13,84,42,8
+    EDITTEXT        IDC_SPARES,108,82,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_SPARES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,171,83,8,
+                    10
+END
+
+IDD_FILEINFO DIALOG DISCARDABLE  0, 0, 154, 162
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "File Info",IDC_STATIC,7,7,140,148
+    LTEXT           "Player Name:",IDC_STATIC,13,19,43,8
+    LTEXT           "Team:",IDC_STATIC,13,32,21,8
+    LTEXT           "Current Year:",IDC_STATIC,13,45,42,8
+    LTEXT           "Championship Position:",IDC_STATIC,13,71,74,8
+    LTEXT           "Championship Points:",IDC_STATIC,13,58,68,8
+    LTEXT           "Next Race:",IDC_STATIC,13,84,37,8
+    LTEXT           "Score:",IDC_STATIC,13,97,22,8
+    LTEXT           "Seasons Completed:",IDC_STATIC,13,110,66,8
+    LTEXT           "File Modified:",IDC_STATIC,13,123,42,8
+    LTEXT           "File Created:",IDC_STATIC,13,136,40,8
+    EDITTEXT        IDC_INFO_PLAYER,89,17,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_TEAM,89,30,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_CURRENTYEAR,89,43,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_CHPOINTS,89,56,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_CHPOS,89,69,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_NEXTRACE,89,82,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_SCORE,89,95,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_SEASONS,89,108,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_MODIFIED,58,121,79,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_INFO_CREATED,58,134,79,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+END
+
+IDD_TRACK DIALOG DISCARDABLE  0, 0, 143, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Track Info",IDC_STATIC,7,7,129,96
+    LTEXT           "Circuit Length (m):",IDC_STATIC,13,19,58,8
+    EDITTEXT        IDC_TRACK_EDIT_LENGTH,75,17,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_TRACK_SPIN_LENGTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,125,16,10,
+                    14
+    LTEXT           "Laps:",IDC_STATIC,13,32,18,8
+    EDITTEXT        IDC_TRACK_EDIT_LAPS,75,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_TRACK_SPIN_LAPS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,125,29,10,
+                    14
+    LTEXT           "Lap Record:",IDC_STATIC,13,45,40,8
+    EDITTEXT        IDC_TRACK_EDIT_RECORD,75,43,48,12,ES_AUTOHSCROLL
+    LTEXT           "Driver:",IDC_STATIC,13,58,22,8
+    LTEXT           "Team:",IDC_STATIC,13,71,21,8
+    LTEXT           "Year:",IDC_STATIC,13,84,18,8
+    EDITTEXT        IDC_TRACK_EDIT_YEAR,75,82,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_TRACK_SPIN_YEAR,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,125,89,10,
+                    14
+    COMBOBOX        IDC_TRACK_COMBO_TEAM,75,69,48,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TRACK_COMBO_DRIVER,53,56,70,84,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAN_DESIGN DIALOG DISCARDABLE  0, 0, 155, 137
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Manager",IDC_STATIC,7,7,136,123
+    LTEXT           "Salary:",IDC_STATIC,13,19,22,8
+    EDITTEXT        IDC_EDIT_SALARY,89,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SALARY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,17,11,
+                    14
+    LTEXT           "Race Bonus:",IDC_STATIC,13,32,42,8
+    EDITTEXT        IDC_EDIT_RACEBONUS,89,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RACEBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,138,29,10,
+                    14
+    LTEXT           "Championship Bonus:",IDC_STATIC,13,45,69,8
+    EDITTEXT        IDC_CHBONUS,89,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_CHBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,77,42,10,
+                    14
+    LTEXT           "Ability:",IDC_STATIC,13,58,21,8
+    EDITTEXT        IDC_EDIT_ABILITY,89,56,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ABILITY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,55,10,
+                    14
+    LTEXT           "Contract Length:",IDC_STATIC,13,71,54,8
+    EDITTEXT        IDC_EDIT_FINALSEASON,89,69,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_FINALSEASON,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,137,68,10,
+                    14
+    LTEXT           "Driver Loyalty:",IDC_STATIC,13,84,46,8
+    COMBOBOX        IDC_DRIVERLOYALTY,65,82,72,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Age:",IDC_STATIC,13,97,16,8
+    EDITTEXT        IDC_EDIT_AGE,89,95,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_AGE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,79,96,10,14
+    LTEXT           "Team:",IDC_STATIC,13,110,21,8
+    COMBOBOX        IDC_COMBO_TEAM,89,108,48,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAN_ENGINEERING DIALOG DISCARDABLE  0, 0, 155, 137
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Manager",IDC_STATIC,7,7,136,123
+    LTEXT           "Salary:",IDC_STATIC,13,19,22,8
+    EDITTEXT        IDC_EDIT_SALARY,89,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SALARY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,17,11,
+                    14
+    LTEXT           "Race Bonus:",IDC_STATIC,13,32,42,8
+    EDITTEXT        IDC_EDIT_RACEBONUS,89,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RACEBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,138,29,10,
+                    14
+    LTEXT           "Championship Bonus:",IDC_STATIC,13,45,69,8
+    EDITTEXT        IDC_CHBONUS,89,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_CHBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,77,42,10,
+                    14
+    LTEXT           "Ability:",IDC_STATIC,13,58,21,8
+    EDITTEXT        IDC_EDIT_ABILITY,89,56,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ABILITY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,55,10,
+                    14
+    LTEXT           "Contract Length:",IDC_STATIC,13,71,54,8
+    EDITTEXT        IDC_EDIT_FINALSEASON,89,69,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_FINALSEASON,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,137,68,10,
+                    14
+    LTEXT           "Driver Loyalty:",IDC_STATIC,13,84,46,8
+    COMBOBOX        IDC_DRIVERLOYALTY,65,82,72,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Age:",IDC_STATIC,13,97,16,8
+    EDITTEXT        IDC_EDIT_AGE,89,95,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_AGE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,79,96,10,14
+    LTEXT           "Team:",IDC_STATIC,13,110,21,8
+    COMBOBOX        IDC_COMBO_TEAM,89,108,48,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAN_COMMERCIAL DIALOG DISCARDABLE  0, 0, 155, 108
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Manager",IDC_STATIC,7,7,136,94
+    LTEXT           "Salary:",IDC_STATIC,13,19,22,8
+    EDITTEXT        IDC_EDIT_SALARY,89,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SALARY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,17,11,
+                    14
+    LTEXT           "Royalty:",IDC_STATIC,13,32,26,8
+    EDITTEXT        IDC_EDIT_ROYALTY,89,30,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ROYALTY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,138,29,10,
+                    14
+    LTEXT           "Ability:",IDC_STATIC,13,45,21,8
+    EDITTEXT        IDC_EDIT_ABILITY,89,43,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ABILITY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,42,10,
+                    14
+    LTEXT           "Contract Length:",IDC_STATIC,13,58,54,8
+    EDITTEXT        IDC_EDIT_FINALSEASON,89,56,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_FINALSEASON,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,137,55,10,
+                    14
+    LTEXT           "Age:",IDC_STATIC,13,71,16,8
+    EDITTEXT        IDC_EDIT_AGE,89,69,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_AGE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,79,70,10,14
+    LTEXT           "Team:",IDC_STATIC,13,84,21,8
+    COMBOBOX        IDC_COMBO_TEAM,89,82,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_MAN_MECHANICS DIALOG DISCARDABLE  0, 0, 155, 137
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Manager",IDC_STATIC,7,7,136,123
+    LTEXT           "Salary:",IDC_STATIC,13,19,22,8
+    EDITTEXT        IDC_EDIT_SALARY,89,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SALARY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,17,11,
+                    14
+    LTEXT           "Race Bonus:",IDC_STATIC,13,32,42,8
+    EDITTEXT        IDC_EDIT_RACEBONUS,89,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RACEBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,138,29,10,
+                    14
+    LTEXT           "Championship Bonus:",IDC_STATIC,13,45,69,8
+    EDITTEXT        IDC_CHBONUS,89,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_CHBONUS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,77,42,10,
+                    14
+    LTEXT           "Ability:",IDC_STATIC,13,58,21,8
+    EDITTEXT        IDC_EDIT_ABILITY,89,56,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ABILITY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,55,10,
+                    14
+    LTEXT           "Contract Length:",IDC_STATIC,13,71,54,8
+    EDITTEXT        IDC_EDIT_FINALSEASON,89,69,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_FINALSEASON,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,137,68,10,
+                    14
+    LTEXT           "Driver Loyalty:",IDC_STATIC,13,84,46,8
+    COMBOBOX        IDC_DRIVERLOYALTY,65,82,72,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Age:",IDC_STATIC,13,97,16,8
+    EDITTEXT        IDC_EDIT_AGE,89,95,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_AGE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,79,96,10,14
+    LTEXT           "Team:",IDC_STATIC,13,110,21,8
+    COMBOBOX        IDC_COMBO_TEAM,89,108,48,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 294, 218
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SPONSORS DIALOG DISCARDABLE  0, 0, 247, 160
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Sponsors",IDC_STATIC,7,7,196,146
+    LTEXT           "Team:",IDC_STATIC,13,19,21,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_TEAM,41,17,64,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,19,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE1,147,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE1,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,213,7,10,
+                    14
+    LTEXT           "Engine:",IDC_STATIC,13,32,25,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_ENGINE,41,30,64,79,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,32,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE2,147,30,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE2,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,213,42,10,
+                    14
+    LTEXT           "Tyre:",IDC_STATIC,13,45,17,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_TYRE,41,43,64,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,45,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE3,147,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE3,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,213,74,10,
+                    14
+    LTEXT           "Fuel:",IDC_STATIC,13,58,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_FUEL,41,56,64,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,58,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE4,147,56,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE4,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,213,106,
+                    10,14
+    LTEXT           "Cash:",IDC_STATIC,13,71,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_CASH1,41,69,64,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,71,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE5,147,69,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE5,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,213,138,
+                    10,14
+    LTEXT           "Cash:",IDC_STATIC,13,84,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_CASH2,41,82,64,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,84,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE6,147,82,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE6,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,229,7,10,
+                    14
+    LTEXT           "Cash:",IDC_STATIC,13,97,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_CASH3,41,95,64,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,97,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE7,147,95,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE7,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,229,42,10,
+                    14
+    LTEXT           "Cash:",IDC_STATIC,13,110,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_CASH4,41,108,64,69,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,110,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE8,147,108,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE8,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,229,74,10,
+                    14
+    LTEXT           "Cash:",IDC_STATIC,13,123,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_CASH5,41,121,64,81,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,123,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE9,147,121,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE9,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,229,106,
+                    10,14
+    LTEXT           "Cash:",IDC_STATIC,13,136,19,8,NOT WS_GROUP
+    COMBOBOX        IDC_TEAMFINANCE_COMBO_CASH6,41,134,64,94,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value:",IDC_STATIC,113,136,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_TEAMFINANCE_EDIT_VALUE10,147,134,48,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_VALUE10,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,229,138,
+                    10,14
+END
+
+IDD_DEP_DESIGN DIALOG DISCARDABLE  0, 0, 235, 137
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Department",IDC_STATIC,7,7,106,31
+    LTEXT           "Morale:",IDC_STATIC,13,19,24,8
+    EDITTEXT        IDC_EDIT_MORALE,57,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_MORALE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,47,16,11,
+                    14
+    GROUPBOX        "Staff",IDC_STATIC,7,40,218,90
+    LTEXT           "Standard",IDC_STATIC,89,47,29,8
+    LTEXT           "Stars",IDC_STATIC,167,47,19,8
+    LTEXT           "Excellent:",IDC_STATIC,13,60,32,8
+    EDITTEXT        IDC_EDIT_STANDARD_EXCELLENT,89,59,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,57,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_EXCELLENT,167,59,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,59,11,
+                    14
+    LTEXT           "Very Good:",IDC_STATIC,13,73,36,8
+    EDITTEXT        IDC_EDIT_STANDARD_VERYGOOD,89,71,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,140,72,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_VERYGOOD,167,71,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,72,11,
+                    14
+    LTEXT           "Good:",IDC_STATIC,13,86,20,8
+    EDITTEXT        IDC_EDIT_STANDARD_GOOD,89,84,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,83,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_GOOD,167,84,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,159,83,11,
+                    14
+    LTEXT           "Average:",IDC_STATIC,13,99,30,8
+    EDITTEXT        IDC_EDIT_STANDARD_AVERAGE,89,97,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,139,96,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_AVERAGE,167,97,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,97,11,
+                    14
+    LTEXT           "Trainee:",IDC_STATIC,13,112,27,8
+    EDITTEXT        IDC_EDIT_STANDARD_TRAINEE,89,110,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,108,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_TRAINEE,167,110,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,110,
+                    11,14
+END
+
+IDD_DEP_ENGINEERING DIALOG DISCARDABLE  0, 0, 235, 137
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Department",IDC_STATIC,7,7,106,31
+    LTEXT           "Morale:",IDC_STATIC,13,19,24,8
+    EDITTEXT        IDC_EDIT_MORALE,57,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_MORALE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,47,16,11,
+                    14
+    GROUPBOX        "Staff",IDC_STATIC,7,40,218,90
+    LTEXT           "Standard",IDC_STATIC,89,47,29,8
+    LTEXT           "Stars",IDC_STATIC,167,47,19,8
+    LTEXT           "Excellent:",IDC_STATIC,13,60,32,8
+    EDITTEXT        IDC_EDIT_STANDARD_EXCELLENT,89,59,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,57,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_EXCELLENT,167,59,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,59,11,
+                    14
+    LTEXT           "Very Good:",IDC_STATIC,13,73,36,8
+    EDITTEXT        IDC_EDIT_STANDARD_VERYGOOD,89,71,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,140,72,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_VERYGOOD,167,71,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,72,11,
+                    14
+    LTEXT           "Good:",IDC_STATIC,13,86,20,8
+    EDITTEXT        IDC_EDIT_STANDARD_GOOD,89,84,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,83,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_GOOD,167,84,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,159,83,11,
+                    14
+    LTEXT           "Average:",IDC_STATIC,13,99,30,8
+    EDITTEXT        IDC_EDIT_STANDARD_AVERAGE,89,97,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,139,96,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_AVERAGE,167,97,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,97,11,
+                    14
+    LTEXT           "Trainee:",IDC_STATIC,13,112,27,8
+    EDITTEXT        IDC_EDIT_STANDARD_TRAINEE,89,110,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,108,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_TRAINEE,167,110,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,110,
+                    11,14
+END
+
+IDD_DEP_MECHANICS DIALOG DISCARDABLE  0, 0, 235, 138
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Department",IDC_STATIC,7,7,106,32
+    LTEXT           "Morale:",IDC_STATIC,13,19,24,8
+    EDITTEXT        IDC_EDIT_MORALE,57,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_MORALE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,47,16,11,
+                    14
+    GROUPBOX        "Staff",IDC_STATIC,7,41,218,90
+    LTEXT           "Standard",IDC_STATIC,89,48,29,8
+    LTEXT           "Stars",IDC_STATIC,167,48,19,8
+    LTEXT           "Excellent:",IDC_STATIC,13,61,32,8
+    EDITTEXT        IDC_EDIT_STANDARD_EXCELLENT,89,60,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,58,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_EXCELLENT,167,60,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,60,11,
+                    14
+    LTEXT           "Very Good:",IDC_STATIC,13,74,36,8
+    EDITTEXT        IDC_EDIT_STANDARD_VERYGOOD,89,72,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,140,73,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_VERYGOOD,167,72,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,73,11,
+                    14
+    LTEXT           "Good:",IDC_STATIC,13,87,20,8
+    EDITTEXT        IDC_EDIT_STANDARD_GOOD,89,85,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,84,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_GOOD,167,85,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,159,84,11,
+                    14
+    LTEXT           "Average:",IDC_STATIC,13,100,30,8
+    EDITTEXT        IDC_EDIT_STANDARD_AVERAGE,89,98,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,139,97,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_AVERAGE,167,98,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,98,11,
+                    14
+    LTEXT           "Trainee:",IDC_STATIC,13,113,27,8
+    EDITTEXT        IDC_EDIT_STANDARD_TRAINEE,89,111,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,109,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_TRAINEE,167,111,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,111,
+                    11,14
+END
+
+IDD_DEP_COMMERCIAL DIALOG DISCARDABLE  0, 0, 235, 148
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Department",IDC_STATIC,7,7,106,42
+    LTEXT           "Morale:",IDC_STATIC,13,19,24,8
+    EDITTEXT        IDC_EDIT_MORALE,57,17,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_MORALE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,47,16,11,
+                    14
+    LTEXT           "Available:",IDC_STATIC,13,32,32,8
+    EDITTEXT        IDC_EDIT_AVAILABLE,57,30,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin3",IDC_SPIN_AVAILABLE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,105,30,11,
+                    14
+    GROUPBOX        "Staff",IDC_STATIC,7,51,218,90
+    LTEXT           "Standard",IDC_STATIC,89,58,29,8
+    LTEXT           "Stars",IDC_STATIC,167,58,19,8
+    LTEXT           "Excellent:",IDC_STATIC,13,71,32,8
+    EDITTEXT        IDC_EDIT_STANDARD_EXCELLENT,89,70,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,79,68,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_EXCELLENT,167,70,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_EXCELLENT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,70,11,
+                    14
+    LTEXT           "Very Good:",IDC_STATIC,13,84,36,8
+    EDITTEXT        IDC_EDIT_STANDARD_VERYGOOD,89,82,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,140,83,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_VERYGOOD,167,82,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_VERYGOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,83,11,
+                    14
+    LTEXT           "Good:",IDC_STATIC,13,97,20,8
+    EDITTEXT        IDC_EDIT_STANDARD_GOOD,89,95,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,94,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_GOOD,167,95,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_GOOD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,159,94,11,
+                    14
+    LTEXT           "Average:",IDC_STATIC,13,110,30,8
+    EDITTEXT        IDC_EDIT_STANDARD_AVERAGE,89,108,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,139,107,
+                    11,14
+    EDITTEXT        IDC_EDIT_STARS_AVERAGE,167,108,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_AVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,217,108,
+                    11,14
+    LTEXT           "Trainee:",IDC_STATIC,13,123,27,8
+    EDITTEXT        IDC_EDIT_STANDARD_TRAINEE,89,121,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STANDARD_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,78,119,11,
+                    14
+    EDITTEXT        IDC_EDIT_STARS_TRAINEE,167,121,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_STARS_TRAINEE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,156,121,
+                    11,14
+END
+
+IDD_LICENSING DIALOG DISCARDABLE  0, 0, 324, 150
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Licensing",IDC_STATIC,7,7,310,104
+    LTEXT           "Demand",IDC_STATIC,89,15,28,8
+    LTEXT           "Completion",IDC_STATIC,147,15,36,8
+    LTEXT           "Cash/Race",IDC_STATIC,205,15,38,8
+    LTEXT           "Fan Club:",IDC_STATIC,13,28,31,8
+    EDITTEXT        IDC_EDIT_DEMAND_FANCLUB,89,27,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEMAND_FANCLUB,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,142,113,
+                    11,14
+    EDITTEXT        IDC_EDIT_COMPLETION_FANCLUB,147,27,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin7",IDC_SPIN_COMPLETION_FANCLUB,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,125,113,
+                    11,14
+    EDITTEXT        IDC_EDIT_CASH_FANCLUB,205,27,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin13",IDC_SPIN_CASH_FANCLUB,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,108,113,
+                    11,14
+    CONTROL         "Sign Deal",IDC_CHECK_FANCLUB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,263,28,47,10
+    LTEXT           "Clothing:",IDC_STATIC,13,42,28,8
+    EDITTEXT        IDC_EDIT_DEMAND_CLOTHING,89,40,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEMAND_CLOTHING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,142,129,
+                    11,14
+    EDITTEXT        IDC_EDIT_COMPLETION_CLOTHING,147,40,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin7",IDC_SPIN_COMPLETION_CLOTHING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,125,129,
+                    11,14
+    EDITTEXT        IDC_EDIT_CASH_CLOTHING,205,40,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin13",IDC_SPIN_CASH_CLOTHING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,108,129,
+                    11,14
+    CONTROL         "Sign Deal",IDC_CHECK_CLOTHING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,263,41,47,10
+    LTEXT           "Publishing:",IDC_STATIC,13,55,35,8
+    EDITTEXT        IDC_EDIT_DEMAND_PUBLISHING,89,53,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEMAND_PUBLISHING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,91,113,11,
+                    14
+    EDITTEXT        IDC_EDIT_COMPLETION_PUBLISHING,147,53,48,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin7",IDC_SPIN_COMPLETION_PUBLISHING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,74,113,11,
+                    14
+    EDITTEXT        IDC_EDIT_CASH_PUBLISHING,205,53,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin13",IDC_SPIN_CASH_PUBLISHING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,57,113,11,
+                    14
+    CONTROL         "Sign Deal",IDC_CHECK_PUBLISHING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,263,54,47,10
+    LTEXT           "Video Games:",IDC_STATIC,13,68,45,8
+    EDITTEXT        IDC_EDIT_DEMAND_VIDEOGAMES,89,66,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEMAND_VIDEOGAMES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,91,129,11,
+                    14
+    EDITTEXT        IDC_EDIT_COMPLETION_VIDEOGAMES,147,66,48,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin7",IDC_SPIN_COMPLETION_VIDEOGAMES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,74,129,11,
+                    14
+    EDITTEXT        IDC_EDIT_CASH_VIDEOGAMES,205,66,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin13",IDC_SPIN_CASH_VIDEOGAMES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,57,129,11,
+                    14
+    CONTROL         "Sign Deal",IDC_CHECK_VIDEOGAMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,263,67,47,10
+    LTEXT           "Chronometers:",IDC_STATIC,13,81,46,8
+    EDITTEXT        IDC_EDIT_DEMAND_CHRONOMETERS,89,79,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEMAND_CHRONOMETERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,41,113,11,
+                    14
+    EDITTEXT        IDC_EDIT_COMPLETION_CHRONOMETERS,147,79,48,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin7",IDC_SPIN_COMPLETION_CHRONOMETERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,24,113,11,
+                    14
+    EDITTEXT        IDC_EDIT_CASH_CHRONOMETERS,205,79,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin13",IDC_SPIN_CASH_CHRONOMETERS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,7,113,11,
+                    14
+    CONTROL         "Sign Deal",IDC_CHECK_CHRONOMETERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,263,80,47,10
+    LTEXT           "Cars:",IDC_STATIC,13,94,17,8
+    EDITTEXT        IDC_EDIT_DEMAND_CARS,89,92,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEMAND_CARS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,41,129,11,
+                    14
+    EDITTEXT        IDC_EDIT_COMPLETION_CARS,147,92,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin7",IDC_SPIN_COMPLETION_CARS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,24,129,11,
+                    14
+    EDITTEXT        IDC_EDIT_CASH_CARS,205,92,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin13",IDC_SPIN_CASH_CARS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,7,129,11,
+                    14
+    CONTROL         "Sign Deal",IDC_CHECK_CARS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,263,93,47,10
+END
+
+IDD_WORK_MECH DIALOG DISCARDABLE  0, 0, 292, 148
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Car Maintenance",IDC_STATIC,7,7,118,134
+    LTEXT           "Spares Available:",IDC_STATIC,13,20,56,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SPARES,69,18,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SPARES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,258,60,11,
+                    14
+    LTEXT           "Car 1 Wear:",IDC_STATIC,13,33,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR1WARE,69,31,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR1WARE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,258,79,11,
+                    14
+    LTEXT           "Car 1 Damage:",IDC_STATIC,13,46,48,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR1DAMAGE,69,44,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR1DAMAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,258,97,11,
+                    14
+    LTEXT           "Car 2 Wear:",IDC_STATIC,13,59,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR2WARE,69,57,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR2WARE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,273,7,11,
+                    14
+    LTEXT           "Car 2 Damage:",IDC_STATIC,13,72,48,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR2DAMAGE,69,70,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR2DAMAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,273,25,11,
+                    14
+    LTEXT           "Car 3 Wear:",IDC_STATIC,13,85,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR3WARE,69,83,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR3WARE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,274,41,11,
+                    14
+    LTEXT           "Car 3 Damage:",IDC_STATIC,13,98,48,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR3DAMAGE,69,96,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR3DAMAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,274,60,11,
+                    14
+    LTEXT           "Car 4 Wear:",IDC_STATIC,13,111,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR4WARE,69,109,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR4WARE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,274,78,11,
+                    14
+    LTEXT           "Car 4 Damage:",IDC_STATIC,13,124,48,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_CAR4DAMAGE,69,122,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CAR4DAMAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,274,95,11,
+                    14
+    GROUPBOX        "Testing",IDC_STATIC,131,7,118,54
+    LTEXT           "Testing Miles:",IDC_STATIC,138,20,44,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MILES,193,18,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_MILES,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,256,7,11,14
+    LTEXT           "Free Practice:",IDC_STATIC,138,33,45,8
+    EDITTEXT        IDC_EDIT_FREEPRACTICE,193,31,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_FREEPRACTICE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,256,25,11,
+                    14
+    LTEXT           "Cost/Mile:",IDC_STATIC,138,46,33,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_COST_MILE,193,44,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_COST_MILE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,257,42,11,
+                    14
+END
+
+IDD_WORK_DESIGN DIALOG DISCARDABLE  0, 0, 254, 190
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Car Technology - Performence",IDC_STATIC,7,7,118,106
+    LTEXT           "Breakes:",IDC_STATIC,13,19,29,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_BREAKES,69,17,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_BREAKES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,135,125,9,
+                    14
+    LTEXT           "Clutch:",IDC_STATIC,13,32,23,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_CLUTCH,69,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_CLUTCH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,152,125,9,
+                    14
+    LTEXT           "Electronics:",IDC_STATIC,13,45,38,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_ELECTRONICS,69,43,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_ELECTRONICS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,169,125,9,
+                    14
+    LTEXT           "Gearbox:",IDC_STATIC,13,58,30,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_GEARBOX,69,56,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_GEARBOX,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,186,125,9,
+                    14
+    LTEXT           "Hydraulics:",IDC_STATIC,13,71,36,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_HYDRAULICS,69,69,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_HYDRAULICS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,203,125,9,
+                    14
+    LTEXT           "Suspension:",IDC_STATIC,13,84,40,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_SUSPENSION,69,82,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_SUSPENSION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,220,125,9,
+                    14
+    LTEXT           "Throttle:",IDC_STATIC,13,97,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PERFORMENCE_THROTTLE,69,95,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PERFORMENCE_THROTTLE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,237,125,9,
+                    14
+    GROUPBOX        "Car Technology - Reliability",IDC_STATIC,129,7,118,106
+    LTEXT           "Breakes:",IDC_STATIC,135,20,29,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_BREAKES,191,17,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_BREAKES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,135,143,9,
+                    14
+    LTEXT           "Clutch:",IDC_STATIC,135,33,23,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_CLUTCH,191,30,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_CLUTCH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,152,143,9,
+                    14
+    LTEXT           "Electronics:",IDC_STATIC,135,46,38,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_ELECTRONICS,191,43,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_ELECTRONICS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,169,143,9,
+                    14
+    LTEXT           "Gearbox:",IDC_STATIC,135,58,30,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_GEARBOX,191,56,48,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_GEARBOX,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,186,143,9,
+                    14
+    LTEXT           "Hydraulics:",IDC_STATIC,135,72,36,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_HYDRAULICS,191,69,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_HYDRAULICS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,203,143,9,
+                    14
+    LTEXT           "Suspension:",IDC_STATIC,135,85,40,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_SUSPENSION,191,82,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_SUSPENSION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,220,143,9,
+                    14
+    LTEXT           "Throttle:",IDC_STATIC,135,98,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RELIABILITY_THROTTLE,191,95,48,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_RELIABILITY_THROTTLE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,237,143,9,
+                    14
+    GROUPBOX        "Driving Aids",IDC_STATIC,7,115,118,67
+    LTEXT           "Active Suspension:",IDC_STATIC,13,127,62,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_ACTIVESUSPENSION,75,125,42,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ACTIVESUSPENSION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,135,161,9,
+                    14
+    LTEXT           "Automatic Gears:",IDC_STATIC,13,140,55,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_AUTOMATICGEARS,75,138,42,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_AUTOMATICGEARS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,152,161,9,
+                    14
+    LTEXT           "Power Breakes:",IDC_STATIC,13,153,51,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_POWERBREAKS,75,151,42,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_POWERBREAKES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,169,161,9,
+                    14
+    LTEXT           "Traction Control:",IDC_STATIC,13,166,53,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TRACTIONCONTROL,75,164,42,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_TRACTIONCONTROL,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,186,161,9,
+                    14
+END
+
+IDD_SPLATSH DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_REGSCREEN DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAN_DRIVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_TEAMFINANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_WORK_ENGINEER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_FILEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_TRACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_MAN_DESIGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_MAN_ENGINEERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_MAN_COMMERCIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_MAN_MECHANICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_SPONSORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_DEP_DESIGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DEP_ENGINEERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DEP_MECHANICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DEP_COMMERCIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_LICENSING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_WORK_MECH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_WORK_DESIGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SPLATSH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_REGSCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_INET                CURSOR  DISCARDABLE     "res\\INet.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAN_DRIVER DLGINIT
+BEGIN
+    IDC_DRIVER_COMBO_ROLE, 0x403, 5, 0
+0x2731, 0x7473, "\000" 
+    IDC_DRIVER_COMBO_ROLE, 0x403, 6, 0
+0x7145, 0x6175, 0x006c, 
+    IDC_DRIVER_COMBO_ROLE, 0x403, 5, 0
+0x2732, 0x646e, "\000" 
+    IDC_DRIVER_COMBO_ROLE, 0x403, 5, 0
+0x6554, 0x7473, "\000" 
+    IDC_DRIVER_COMBO_POS, 0x403, 2, 0
+0x0031, 
+    IDC_DRIVER_COMBO_POS, 0x403, 2, 0
+0x0032, 
+    IDC_DRIVER_COMBO_POS, 0x403, 2, 0
+0x0033, 
+    0
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SaveEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

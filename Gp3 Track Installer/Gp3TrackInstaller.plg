@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Gp3TrackInstaller - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x41d /fo"Release/Gp3TrackInstaller.res" /d "NDEBUG" "C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Gp3TrackInstaller.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Gp3TrackInstaller.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\InfoZip\InfoZip.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Banner\BannerStatic.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Banner\ColorString.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Banner\MultiColorStatic.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\DlgOptions.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\DlgProgress.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\DlgReport.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Gp3Info.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Gp3TrackInstaller.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Gp3TrackInstallerDlg.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\Language.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\LogTrace.cpp"
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\RegEdit.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22E.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Gp3TrackInstaller.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Documents\Mina Program\C++\Gp3\Gp3 Track Installer\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22F.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP230.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Gp3 Track Installer.pdb" /machine:I386 /out:"Release/Gp3 Track Installer.exe" 
+".\Release\InfoZip.obj"
+".\Release\BannerStatic.obj"
+".\Release\ColorString.obj"
+".\Release\MultiColorStatic.obj"
+".\Release\DlgOptions.obj"
+".\Release\DlgProgress.obj"
+".\Release\DlgReport.obj"
+".\Release\Gp3Info.obj"
+".\Release\Gp3TrackInstaller.obj"
+".\Release\Gp3TrackInstallerDlg.obj"
+".\Release\Language.obj"
+".\Release\LogTrace.obj"
+".\Release\RegEdit.obj"
+".\Release\StdAfx.obj"
+".\Release\Gp3TrackInstaller.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP230.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+InfoZip.cpp
+BannerStatic.cpp
+ColorString.cpp
+MultiColorStatic.cpp
+DlgOptions.cpp
+DlgProgress.cpp
+DlgReport.cpp
+Gp3Info.cpp
+Gp3TrackInstaller.cpp
+Gp3TrackInstallerDlg.cpp
+Language.cpp
+LogTrace.cpp
+RegEdit.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Gp3 Track Installer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
